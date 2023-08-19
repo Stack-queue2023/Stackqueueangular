@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ManiComponent } from './mani/mani.component';
+import { JeevaComponent } from './jeeva/jeeva.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ManiComponent
+    ManiComponent,
+    JeevaComponent
   ],
   imports: [
     BrowserModule,
