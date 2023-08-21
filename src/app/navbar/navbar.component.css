@@ -33,3 +33,35 @@
   font-size: 1.3rem;
   cursor: pointer;
 }
+
+@media screen and (max-width:500px) and (min-width:360px) {
+  .stack-queue-header{
+    display: none;
+  }
+  .mobile-stack-queue-header{
+    display: block;
+    background-color: #faeaff;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Institution-logo img{
+    width: 163px;
+    height: 80px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .mobile-stack-queue-header-icons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-right: 10px;
+  }
+  .icons{
+    cursor: pointer;
+  }
+
+}
