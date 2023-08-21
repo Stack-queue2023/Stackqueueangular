@@ -1,0 +1,40 @@
+.splash-screen-image img{
+  width: 950px;
+  height: 85vh;
+}
+.splash-screen-content{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+.content h1{
+  font-size: 2.5rem;
+}
+.content p{
+  font-size: 1.5rem;
+}
+.join-button button{
+  padding:1rem 1.8rem 1rem 1.8rem;
+  background-color: #65Baa9;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.join-button i{
+  color: #fff;
+  font-size: 2rem;
+}
+.splash-screen-quote{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}

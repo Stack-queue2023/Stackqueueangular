@@ -1,0 +1,35 @@
+.stack-queue-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1rem;
+  background-color: #faeaff;
+}
+.Institution-logo img{
+  width: 240px;
+  height: 108px;
+}
+.navigation-links{
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.navigation-links a{
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.Navbar-registerbutton{
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.register-button button{
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  color: black;
+  background-color: #65Baa9;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
