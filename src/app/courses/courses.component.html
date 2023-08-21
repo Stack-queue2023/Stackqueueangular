@@ -1,0 +1,20 @@
+<div class="course-heading">
+  <div><h1>Courses offered</h1></div>
+  <div class="horizontal-line"></div>
+</div>
+<div class="courses">
+<div class="courses-available"  *ngFor="let courselist of coursedetails">
+  <div>
+    <img src="{{courselist.courseimage}}" alt="Fullstack" title="{{courselist.title}}">
+  </div>
+  <div>
+    <h1>{{courselist.courseheading}}</h1>
+  </div>
+  <div class="details-button" *ngIf="isshowhide">
+    <p>{{courselist.coursecontent}}</p>
+    <button>View Details</button>
+  </div>
+</div>
+
+</div>
+
