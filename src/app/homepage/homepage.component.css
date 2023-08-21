@@ -38,6 +38,9 @@
   flex-direction: column;
   gap: 5rem;
 }
+.mobile-splash-screen-content{
+  display: none;
+}
 
 @media screen and (max-width:500px) and (min-width:360px) {
   .splash-screen-content{
@@ -51,8 +54,8 @@
     gap: 20px;
   }
   .contents:nth-child(1){
-    width: 320px;
-    height: 125px;
+    width: 83%;
+    height: 15vh;
     margin: 35px;
     border: none;
     border-radius: 10px;
@@ -60,39 +63,42 @@
     position: relative;
   }
   .contents:nth-child(1) img{
-    width: 153px;
-    height: 100px;
+    width: 46%;
+    height: 90%;
     position: absolute;
-    left: 161px;
-    bottom: 12px;
+    left: 53%;
+    bottom: 2%;
   }
   .contents:nth-child(1) button{
-    width: 123px;
-    height: 33px;
+    width: 40%;
+    height: 25%;
     border-radius: 20px;
     background: #65BAA9;
     border: none;
     position: absolute;
-    left: 20px;
-    bottom: 10px;
+    left: 5%;
+    bottom: 5%;
   }
   .contents p{
     font-size: 5vw;
     font-weight: bolder;
     margin-left: 30px;
   }
+  .contents:nth-child(2){
+    width: 99%;
+  }
   .courses-slider{
     display: flex;
     overflow: hidden;
     overflow-x: scroll;
-    width: 355px;
+    width: 93%;
     gap: 5px;
     margin-left: 30px;
     margin-top: 20px;
   }
   .sliders{
-    width: 120px;
-    height: 120px;
+    width: 35%;
+    height: 35%;
     background-color: #DDF0EC;
     border-radius: 10px;
     padding: 10px;

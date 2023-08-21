@@ -33,6 +33,9 @@
   font-size: 1.3rem;
   cursor: pointer;
 }
+.mobile-stack-queue-header{
+  display: none;
+}
 
 @media screen and (max-width:500px) and (min-width:360px) {
   .stack-queue-header{
@@ -63,5 +66,4 @@
   .icons{
     cursor: pointer;
   }
-
 }
