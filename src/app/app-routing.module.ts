@@ -4,6 +4,7 @@ import { CoursesComponent } from './courses/courses.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,10 @@ const routes: Routes = [
   {
     path:"login",
     component:LoginComponent
+  },
+  {
+    path:"aboutus",
+    component:AboutusComponent
   }
 ];
 
