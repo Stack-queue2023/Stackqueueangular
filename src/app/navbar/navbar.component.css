@@ -52,6 +52,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0px;
   }
   .Institution-logo img{
     width: 163px;

@@ -8,6 +8,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { CoursesComponent } from './courses/courses.component';
 import {HttpClientModule} from '@angular/common/http';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import {HttpClientModule} from '@angular/common/http';
     NavbarComponent,
     FooterComponent,
     HomepageComponent,
-    CoursesComponent
+    CoursesComponent,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

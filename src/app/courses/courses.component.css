@@ -43,3 +43,12 @@
   width: 165px;
   height: 155px;
 }
+
+@media screen and (max-width:500px) and (min-width:360px) {
+  .course-heading{
+    margin-top: 23%;
+  }
+  .courses{
+    margin-bottom: 30%;
+  }
+}
