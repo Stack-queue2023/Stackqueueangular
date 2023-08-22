@@ -1,9 +1,16 @@
+*{
+  box-sizing: border-box;
+}
 .stack-queue-header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-inline: 1rem;
+  padding: 0 2rem 0 2rem;
   background-color: #faeaff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
 }
 .Institution-logo img{
   width: 240px;
@@ -20,6 +27,10 @@
   cursor: pointer;
   text-decoration: none;
   color: black;
+}
+.Navbar-registerbutton .navigation-links .navigation-active{
+  border-bottom: 2px solid #772ED6;
+  color:#772ED6 ;
 }
 .Navbar-registerbutton{
   display: flex;

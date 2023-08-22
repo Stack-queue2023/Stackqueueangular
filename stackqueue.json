@@ -20,14 +20,14 @@
     {
       "coursename":"Python",
       "title":"Python image",
-      "courseheading":"Python crash course",
+      "courseheading":"Python course",
       "coursecontent":"Fundamentals in Python,Python with Data Science available",
       "courseimage":"../../assets/python.png"
     },
     {
       "coursename":"Flutter",
       "title":"Flutter image",
-      "courseheading":"Python crash course",
+      "courseheading":"Flutter course",
       "coursecontent":"Fundamentals in Python,Python with Data Science available",
       "courseimage":"../../assets/flutter.png"
     },
@@ -41,49 +41,49 @@
     {
       "coursename":"React",
       "title":"React image",
-      "courseheading":"Python crash course",
+      "courseheading":"Reactjs course",
       "coursecontent":"Fundamentals in Python,Python with Data Science available",
       "courseimage":"../../assets/react.png"
     },
     {
       "coursename":"JAVA",
       "title":"JAVA image",
-      "courseheading":"Python crash course",
+      "courseheading":"JAVA core",
       "coursecontent":"Fundamentals in Python,Python with Data Science available",
       "courseimage":"../../assets/java.png"
     },
     {
       "coursename":"MongoDB",
       "title":"MongoDB image",
-      "courseheading":"Python crash course",
+      "courseheading":"MongoDB course",
       "coursecontent":"Fundamentals in Python,Python with Data Science available",
       "courseimage":"../../assets/mongoDb.png"
     },
     {
       "coursename":"Angular",
-      "title":"Angular image",
-      "courseheading":"Python crash course",
+      "title":"Angular Framework",
+      "courseheading":"Angular Framework",
       "coursecontent":"Fundamentals in Python,Python with Data Science available",
       "courseimage":"../../assets/Angular.png"
     },
     {
       "coursename":"AWS",
-      "title":"AWS image",
-      "courseheading":"Python crash course",
+      "title":"AWS services",
+      "courseheading":"AWS Services",
       "coursecontent":"Fundamentals in Python,Python with Data Science available",
       "courseimage":"../../assets/aws.png"
     },
     {
       "coursename":"MySQL",
-      "title":"MySQL image",
-      "courseheading":"Python crash course",
+      "title":"MySQL Database",
+      "courseheading":"MySQL Database",
       "coursecontent":"Fundamentals in Python,Python with Data Science available",
       "courseimage":"../../assets/sql.png"
     },
     {
       "coursename":"Fullstack",
-      "title":"Fullstack image",
-      "courseheading":"Python crash course",
+      "title":"Fullstack web development",
+      "courseheading":"Fullstack Web Development",
       "coursecontent":"Fundamentals in Python,Python with Data Science available",
       "courseimage":"../../assets/fullstack.png"
     }
