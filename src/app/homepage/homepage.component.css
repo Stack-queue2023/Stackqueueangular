@@ -269,7 +269,6 @@
 .course-mode-heading{
   width: 28rem;
   font-size: 2.8rem;
-  /* text-align: justify; */
 }
 .course-mode-content{
   display: flex;
@@ -337,4 +336,5 @@
 .testimonals-heading{
   padding: 2rem 5rem 0 4rem;
 
+}
 }
