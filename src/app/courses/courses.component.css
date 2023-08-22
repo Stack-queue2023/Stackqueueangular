@@ -92,5 +92,18 @@
   .course-details{
     display: none;
   }
-
+  .courses-available{
+    width: 40%;
+    height: 180px;
+    cursor: pointer;
+  }
+  .courses-available img{
+    width: 100%;
+  }
+  .course-heading-1{
+    display: none;
+  }
+  .details-button{
+    display: none;
+  }
 }

@@ -247,7 +247,18 @@
 }
 .testimonals-heading{
   padding: 2rem 5rem 0 4rem;
-
+}
+.mobile-knowledge-expected{
+  display: none;
+}
+.mobile-knowledge-expected-image{
+  display: none;
+}
+.mobile-testimonals-heading{
+  display: none;
+}
+.mobile-testimonals{
+  display: none;
 }
 @media screen and (max-width:500px) and (min-width:360px) {
   .splash-screen-content{
@@ -276,6 +287,7 @@
     position: absolute;
     left: 53%;
     bottom: 2%;
+    z-index: -1;
   }
   .contents:nth-child(1) button{
     width: 40%;
@@ -335,7 +347,7 @@
     font-size: 3.5vw;
     font-weight: lighter;
     margin-left: 160px;
-    padding-bottom: 20%;
+    padding-bottom: 5%;
   }
   .knowledge-expected-image{
     display: none;
@@ -357,5 +369,97 @@
   }
   .knowledge-expected{
     display: none;
+  }
+  .mobile-knowledge-expected{
+    display: block;
+  }
+  .mobile-knowledge-expected h1{
+    font-size: 5vw;
+    margin-left: 30px;
+  }
+  .mobile-knowledge-expected p{
+    font-size: 4vw;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-top: 5px;
+  }
+  .mobile-knowledge-expected-image{
+    display: block;
+  }
+  .mobile-knowledge-expected-image img{
+    width: 80%;
+    margin-left: 30px;
+  }
+  .mobile-expected-skills{
+    width: 85%;
+    margin-left: 30px;
+    margin-bottom: 7%;
+  }
+  .mobile-box-display{
+    width: 100%;
+    box-shadow: 5px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 5%;
+    border-radius: 20px;
+    padding: 5%;
+  }
+  .mobile-box-display svg{
+    margin-left: 40%;
+    margin-top: 5%;
+  }
+  .mobile-box-display h2{
+    margin-left: 10%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-size: 6vw;
+  }
+  .mobile-box-display p{
+    font-size: 4.5vw;
+    margin-bottom: 5%;
+  }
+  .mobile-testimonals-heading{
+    display: block;
+  }
+  .mobile-testimonals-heading h1{
+    font-size: 5vw;
+  }
+  .mobile-testimonals{
+    display: block;
+    margin: 10%;
+    margin-bottom: 40%;
+    width: 80%;
+  }
+  .mobile-testimonals img{
+    width: 40%;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 30%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .mobile-students-reviews{
+    box-shadow: 5px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10%;
+    padding: 5%;
+    border-radius: 10px;
+  }
+  .mobile-course-reviews{
+    width: 100%;
+    margin-left: 5%;
+    padding-bottom: 5%;
+  }
+  .course-name{
+    margin-left: 10%;
+  }
+  .student-name{
+    margin-left: 10%;
+    margin-top: 3%;
+  }
+  .course-satisfaction{
+    margin-left: 10%;
+    margin-top: 3%;
+  }
+  .para{
+    width: 80%;
+    margin-top: 3%;
   }
 }

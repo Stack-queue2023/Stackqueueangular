@@ -65,6 +65,7 @@
     align-items: center;
     position: fixed;
     top: 0px;
+    z-index: 1;
   }
   .Institution-logo img{
     width: 163px;
