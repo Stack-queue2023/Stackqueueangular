@@ -66,15 +66,6 @@
   width: 165px;
   height: 155px;
 }
-
-@media screen and (max-width:500px) and (min-width:360px) {
-  .course-heading{
-    margin-top: 23%;
-  }
-  .courses{
-    margin-bottom: 30%;
-  }
-
 .details-button{
   animation: animation 500ms ease-in-out;
   transform-origin: top;
@@ -90,4 +81,16 @@
     transform: scaleY(1);
   }
 }
+
+@media screen and (max-width:500px) and (min-width:360px) {
+  .course-heading{
+    margin-top: 23%;
+  }
+  .courses{
+    margin-bottom: 30%;
+  }
+  .course-details{
+    display: none;
+  }
+
 }
