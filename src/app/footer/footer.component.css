@@ -103,4 +103,7 @@
   .Activelink{
     border-top: 4px solid #056F5A;
   }
+  .footer-top{
+    display: none;
+  }
   }
