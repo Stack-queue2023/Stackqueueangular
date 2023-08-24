@@ -80,3 +80,14 @@
   font-size: 2.8rem;
   text-transform: uppercase;
 }
+.choosing-details{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.choose-grid-details{
+  
+}

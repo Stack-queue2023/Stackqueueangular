@@ -1,9 +1,9 @@
 <div>
-  <app-navbar></app-navbar>
+  <app-navbar *ngIf="navbartoggle"></app-navbar>
 </div>
 <div>
   <router-outlet></router-outlet>
 </div>
 <div>
-  <app-footer></app-footer>
+  <app-footer *ngIf="footertoggle"></app-footer>
 </div>
