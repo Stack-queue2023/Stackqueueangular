@@ -11,6 +11,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import {ReactiveFormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -21,12 +22,15 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     CoursesComponent,
     RegisterComponent,
     LoginComponent,
-    AboutusComponent
+    AboutusComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

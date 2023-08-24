@@ -30,6 +30,14 @@ const routes: Routes = [
   {
     path:"aboutus",
     component:AboutusComponent
+  },
+  {
+    path:"login",
+    component:LoginComponent
+  },
+  {
+    path:"register",
+    component:RegisterComponent
   }
 ];
 
