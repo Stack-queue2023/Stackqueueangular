@@ -11,7 +11,11 @@ declare var AOS: any;
 export class HomepageComponent {
   coursedetails:any;
   isshowhide:boolean=false;
+  phoneNumber:any=7904925991;
+  defaultMessage:any='Hello STACK-QUEUE, We need more details about your service.';
+  url:any;
   constructor(private _http:HttpClient,private router:Router){
+    this.url=`https://wa.me/${this.phoneNumber}?text=${encodeURIComponent(this.defaultMessage)}`;
     this._http.get<any>("http://localhost:3000/courses").subscribe((coursedetails)=>{
       console.log(coursedetails);
     this.coursedetails=coursedetails;

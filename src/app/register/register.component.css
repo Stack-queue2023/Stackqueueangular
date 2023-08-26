@@ -5,6 +5,9 @@
   flex-direction: column;
   gap: 3rem;
 }
+.stack-queue-logo{
+  padding: 1rem 0 0 1rem;
+}
 .stack-queue-logo img{
   width: 250px;
   height: 100px;

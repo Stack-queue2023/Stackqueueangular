@@ -42,6 +42,7 @@
   flex-direction: row;
   gap: 1rem;
   align-items: center;
+  cursor: pointer;
 }
 .address-stack{
   width: 20rem;
@@ -60,6 +61,10 @@
 
 .mobile-stack-queue-footer{
   display: none;
+}
+#mailto{
+  text-decoration: none;
+  color: black;
 }
 @media screen and (max-width:500px) and (min-width:360px) {
   .footer-details{
@@ -107,3 +112,4 @@
     display: none;
   }
   }
+

@@ -1,6 +1,9 @@
 *{
   box-sizing: border-box;
 }
+.homepage{
+  position: relative;
+}
 .splash-screen-image img{
   width: 950px;
   height: 85vh;
@@ -462,4 +465,13 @@
     width: 80%;
     margin-top: 3%;
   }
+}
+.whatsapp{
+  position: absolute;
+  right: 3%;
+  top: 80vh;
+}
+
+.whatsapp{
+  position: fixed;
 }
