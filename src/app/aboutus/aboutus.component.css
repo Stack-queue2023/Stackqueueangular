@@ -113,3 +113,124 @@
 .para1{
   width: 15rem;
 }
+.mobile-aboutus{
+  display: none;
+}
+
+@media screen and (max-width:500px) and (min-width:360px) {
+.about-us{
+  display: none;
+}
+.about-us-mentorship{
+  display: none;
+}
+.choosing-details{
+  display: none;
+}
+.best-quote{
+  display: none;
+}
+.mobile-aboutus{
+  display: block;
+  margin-top: 10%;
+}
+.mobile-aboutus h1{
+  font-size: 6vw;
+  margin-left: 10%;
+}
+
+.mobile-aboutus h2{
+  font-size: 5vw;
+  margin-top: 2%;
+}
+.mobile-aboutus-contents{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-top: 7%;
+  margin-bottom: 30%;
+}
+.mobile-aboutus-content p:nth-child(1){
+  font-size: 5vw;
+  margin-bottom: 5%;
+  margin-right: 10%;
+  line-height: 30px;
+  margin-top: -9%;
+  text-align: justify;
+}
+.mobile-aboutus-content p:nth-child(2){
+  font-size: 6vw;
+  margin-bottom: 5%;
+  margin-right: 10%;
+}
+.mobile-aboutus-content ul{
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 17%;
+}
+.mobile-aboutus-content li{
+  font-size: 4.5vw;
+  line-height: 30px;
+  text-align: justify;
+}
+.mobile-aboutus-content img{
+  width: 75%;
+  margin-left: 6%;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+.mobile-aboutus-content q{
+  font-size: 5vw;
+  color: black;
+  margin-right: 5%;
+  margin-left: -4%;
+  font-family: 'Pacifico', cursive;
+}
+.mobile-aboutus-content h1:nth-child(1){
+  font-size: 5vw;
+  margin-top: 5%;
+  margin-left: 0%;
+}
+.mobile-aboutus-content h1:nth-child(2){
+  font-size: 4.5vw;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-right: 5%;
+  margin-left: 0%;
+}
+.heading h2{
+  margin-left: 5%;
+  font-size:6vw;
+  margin-top:15%;
+}
+.mobile-aboutus-content span{
+  font-size: 5vw;
+  color: black;
+  margin-left: 30%;
+}
+.mobile-aboutus-content:nth-child(6){
+  background-color: #DDF0EC;
+  width: 100%;
+  margin-left: -6%;
+  padding: 5%;
+}
+.mobile-aboutus-content:nth-child(8){
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.mobile-reason-grid{
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  width: 80%;
+  border-radius: 10px;
+  padding: 5%;
+  margin-left: 5%;
+  margin-top: 8%;
+}
+.mobile-reason-grid img{
+  width: 35%;
+  margin-left: 30%;
+}
+}
