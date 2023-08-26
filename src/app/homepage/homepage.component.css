@@ -335,18 +335,18 @@
     margin-right: 5%;
   }
   .contents:nth-child(4) p:nth-child(1){
-    font-size: 4.5vw;
-    margin-left: 120px;
+    font-size: 6vw;
+    margin-left: 60px;
   }
   .contents:nth-child(4) p:nth-child(2){
-    font-size: 3.5vw;
+    font-size: 4vw;
     font-weight: lighter;
-    margin-left: 150px;
+    margin-left: 90px;
   }
   .contents:nth-child(4) p:nth-child(3){
-    font-size: 3.5vw;
+    font-size: 4vw;
     font-weight: lighter;
-    margin-left: 160px;
+    margin-left: 90px;
     padding-bottom: 5%;
   }
   .knowledge-expected-image{
