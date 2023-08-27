@@ -1,12 +1,17 @@
+<<<<<<< HEAD
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 declare var AOS: any;
+=======
+import { Component } from '@angular/core';
+>>>>>>> efcae813fe88408f088e57a135791f4a271fb970
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+<<<<<<< HEAD
 export class AppComponent implements OnInit {
   title = 'STACK-QUEUE';
   navbartoggle:boolean=true;
@@ -33,4 +38,8 @@ export class AppComponent implements OnInit {
     });
 
   }
+=======
+export class AppComponent {
+  title = 'Stack-queue';
+>>>>>>> efcae813fe88408f088e57a135791f4a271fb970
 }

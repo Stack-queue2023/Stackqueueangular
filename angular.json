@@ -3,7 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "STACK-QUEUE": {
+=======
+    "Stack-queue": {
+>>>>>>> efcae813fe88408f088e57a135791f4a271fb970
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -25,12 +29,18 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "src/styles.css",
               "node_modules/aos/dist/aos.css"
             ],
             "scripts": [
               "node_modules/aos/dist/aos.js"
             ]
+=======
+              "src/styles.css"
+            ],
+            "scripts": []
+>>>>>>> efcae813fe88408f088e57a135791f4a271fb970
           },
           "configurations": {
             "production": {
@@ -63,10 +73,17 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+<<<<<<< HEAD
               "browserTarget": "STACK-QUEUE:build:production"
             },
             "development": {
               "browserTarget": "STACK-QUEUE:build:development"
+=======
+              "browserTarget": "Stack-queue:build:production"
+            },
+            "development": {
+              "browserTarget": "Stack-queue:build:development"
+>>>>>>> efcae813fe88408f088e57a135791f4a271fb970
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +91,11 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "STACK-QUEUE:build"
+=======
+            "browserTarget": "Stack-queue:build"
+>>>>>>> efcae813fe88408f088e57a135791f4a271fb970
           }
         },
         "test": {
