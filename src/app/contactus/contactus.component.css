@@ -90,3 +90,94 @@ small{
   border: none;
   font-size: 1.3rem;
 }
+.mobile-contact{
+  display: none;
+}
+
+@media screen and (max-width:500px) and (min-width:360px) {
+  .contact-us{
+    display: none;
+  }
+  .mobile-contact{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:20px;
+    margin-top: 22%;
+    margin-bottom: 38%;
+  }
+  .mobile-cotents img{
+    width: 85%;
+    margin-left: 8%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+  .mobile-cotents:nth-child(2){
+    background: #DDF0EC;
+    padding: 10%;
+  }
+  .mobile-cotents:nth-child(2) i{
+   color: red;
+   font-size: 6vw;
+  }
+  .mobile-cotents:nth-child(2) h3{
+   font-size: 6vw;
+   margin-left: 10%;
+   margin-top: -8%;
+  }
+  .mobile-cotents:nth-child(2) p{
+   font-size: 4.5vw;
+   margin-left: 10%;
+   margin-top: 3%;
+   text-align: justify;
+  }
+  .mobile-cotents:nth-child(3) iframe{
+    width: 100%;
+  }
+  .mobile-cotents:nth-child(4) h2{
+    font-size: 5vw;
+    margin-left: 5%;
+  }
+  .form-control{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  .form-controls{
+    width: 90%;
+  }
+  .form-controls input{
+    width: 100%;
+    height: 5vh;
+    padding-left: 5%;
+    border: none;
+    font-size: 5vw;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 6px 3px #D9D9D9;
+    margin-bottom: 3%;
+  }
+  .form-controls textarea{
+    border: none;
+    font-size: 5vw;
+    outline: none;
+    padding: 5%;
+  }
+  .form-controls small{
+    margin-left: 5%;
+  }
+  .form-controls button{
+    width: 100%;
+    height: 5vh;
+    border: none;
+    background: #65Baa9;
+    color: black;
+    font-weight: bold;
+    font-size: 5vw;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}

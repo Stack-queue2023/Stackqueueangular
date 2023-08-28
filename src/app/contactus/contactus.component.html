@@ -79,3 +79,57 @@
       </div>
     </div>
 </div>
+
+<!-- mobile view -->
+
+<div class="mobile-contact">
+  <div class="mobile-cotents">
+    <img src="./assets/contact-1.png" alt="">
+  </div>
+  <div class="mobile-cotents">
+    <i class="fa-solid fa-location-dot"></i>
+    <h3>ADDRESS</h3>
+    <p>STACK-QUEUE, Kallikottai, Sankari Main Rd, Sandaipet, Kondalampatti, Salem, Tamil Nadu 636010.</p>
+  </div>
+  <div class="mobile-cotents">
+    <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125045.93510108991!2d78.15495680000001!3d11.645747200000011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babef7d38562ed9%3A0xc1f200b0aa888c50!2sSTACK-QUEUE!5e0!3m2!1sen!2sin!4v1692967733544!5m2!1sen!2sin"
+    width="450" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="mobile-cotents">
+    <h2>LEAVE COMMENT / QUERY</h2>
+    <form action="" [formGroup]="getintouch">
+      <div class="form-control">
+        <div class="form-controls">
+          <input type="text" placeholder="First name" formControlName="firstname">
+              <small *ngIf="getintouch.controls['firstname'].errors?.['required'] && getintouch.controls['firstname'].touched">Firstname is required</small>
+              <small *ngIf="getintouch.controls['firstname'].errors?.['pattern']">Enter valid firstname</small>
+        </div>
+        <div class="form-controls">
+          <input type="text" placeholder="Last Name" formControlName="lastname">
+              <small *ngIf="getintouch.controls['lastname'].errors?.['required'] && getintouch.controls['lastname'].touched">Lastname is required</small>
+              <small *ngIf="getintouch.controls['lastname'].errors?.['pattern']">Provide valid Lastname</small>
+        </div>
+        <div class="form-controls">
+          <input type="email" placeholder="Email ID" formControlName="emailid">
+              <small *ngIf="getintouch.controls['emailid'].errors?.['required'] && getintouch.controls['emailid'].touched">Email ID is required</small>
+                <small *ngIf="getintouch.controls['emailid'].errors?.['pattern']">Provide valid Email ID</small>
+        </div>
+        <div class="form-controls">
+          <input type="text" placeholder="Subject" formControlName="subject">
+              <small *ngIf="getintouch.controls['subject'].errors?.['required'] && getintouch.controls['subject'].touched">Subject is required</small>
+              <small *ngIf="getintouch.controls['subject'].errors?.['minlength']">Provide proper subject</small>
+        </div>
+        <div class="form-controls">
+          <textarea name="" id="" cols="30" rows="10" formControlName="message" placeholder="Message"></textarea>
+          <small *ngIf="getintouch.controls['message'].errors?.['required'] && getintouch.controls['message'].touched">Leave message</small>
+          <small *ngIf="getintouch.controls['message'].errors?.['minlength']">Provide more message</small>
+        </div>
+        <div class="form-controls">
+          <button>Leave a Comment</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
