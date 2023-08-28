@@ -18,25 +18,31 @@
   </div>
   <div class="form-comment">
     <div>
-      <h2>LEAVE COMMENT</h2>
+      <h2>LEAVE COMMENT / QUERY</h2>
     </div>
     <div class="form-details">
-      <form [formGroup]="getintouch" class="contact-form-details">
+      <form [formGroup]="getintouch" class="contact-form-details" (ngSubmit)="getintouch.valid && contactFormSubmission()">
         <div class="getintouch-form">
           <div class="first-set-form">
             <div class="contact-form-control">
               <label>First Name</label>
               <input type="text" placeholder="First name" formControlName="firstname">
               <small
-                *ngIf="getintouch.controls['firstname'].errors?.['required'] && getintouch.controls['firstname'].dirty">Provide
-                valid firstname</small>
+                *ngIf="getintouch.controls['firstname'].errors?.['required'] && getintouch.controls['firstname'].touched">Firstname is required
+              </small>
+              <small
+                *ngIf="getintouch.controls['firstname'].errors?.['pattern']">Enter valid firstname
+              </small>
             </div>
             <div class="contact-form-control">
               <label>Email ID</label>
               <input type="email" placeholder="Email ID" formControlName="emailid">
               <small
-                *ngIf="getintouch.controls['emailid'].errors?.['required'] && getintouch.controls['emailid'].dirty">Provide
-                valid Email ID</small>
+                *ngIf="getintouch.controls['emailid'].errors?.['required'] && getintouch.controls['emailid'].touched">
+                Email ID is required</small>
+                <small
+                *ngIf="getintouch.controls['emailid'].errors?.['pattern']">
+                Provide valid Email ID</small>
             </div>
           </div>
           <div class="second-form-control">
@@ -44,15 +50,17 @@
               <label>Last Name</label>
               <input type="text" placeholder="Last Name" formControlName="lastname">
               <small
-                *ngIf="getintouch.controls['lastname'].errors?.['required'] && getintouch.controls['lastname'].dirty">Provide
-                valid firstname</small>
+                *ngIf="getintouch.controls['lastname'].errors?.['required'] && getintouch.controls['lastname'].touched">Lastname is required</small>
+                <small
+                *ngIf="getintouch.controls['lastname'].errors?.['pattern']">Provide valid Lastname</small>
             </div>
             <div class="contact-form-control">
               <label>Subject</label>
-              <input type="text" placeholder="Subject" formControlName="Subject">
+              <input type="text" placeholder="Subject" formControlName="subject">
               <small
-                *ngIf="getintouch.controls['subject'].errors?.['required'] && getintouch.controls['subject'].dirty">Provide
-                valid firstname</small>
+                *ngIf="getintouch.controls['subject'].errors?.['required'] && getintouch.controls['subject'].touched">Subject is required</small>
+                <small
+                *ngIf="getintouch.controls['subject'].errors?.['minlength']">Provide proper subject</small>
             </div>
           </div>
         </div>
@@ -60,8 +68,12 @@
           <label>Message</label>
           <textarea name="" id="" cols="30" rows="10" formControlName="message"></textarea>
           <small
-                *ngIf="getintouch.controls['message'].errors?.['required'] && getintouch.controls['message'].dirty">Provide
-                valid firstname</small>
+                *ngIf="getintouch.controls['message'].errors?.['required'] && getintouch.controls['message'].touched">Leave message</small>
+                <small
+                *ngIf="getintouch.controls['message'].errors?.['minlength']">Provide more message</small>
+        </div>
+        <div class="comment-button">
+          <button><b>Leave a comment</b></button>
         </div>
         </form>
       </div>
