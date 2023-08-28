@@ -263,6 +263,14 @@
 .mobile-testimonals{
   display: none;
 }
+.whatsapp{
+  position: absolute;
+  right: 3%;
+  top: 80vh;
+}
+.whatsapp{
+  position: fixed;
+}
 @media screen and (max-width:500px) and (min-width:360px) {
   .splash-screen-content{
     display: none;
@@ -465,13 +473,12 @@
     width: 80%;
     margin-top: 3%;
   }
-}
-.whatsapp{
-  position: absolute;
-  right: 3%;
-  top: 80vh;
-}
-
-.whatsapp{
-  position: fixed;
+  .whatsapp{
+    position: absolute;
+    right: 3%;
+    top: 75vh;
+  }
+  .whatsapp{
+    position: fixed;
+  }
 }

@@ -80,7 +80,7 @@
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    bottom: 0px;
+    bottom: 5px;
   }
   .mobile-stack-queue-footer-icons{
     display: flex;
