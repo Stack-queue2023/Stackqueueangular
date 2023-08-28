@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  toggle:boolean=true;
 
+  showheart(){
+    this.toggle=!this.toggle
+  }
 }

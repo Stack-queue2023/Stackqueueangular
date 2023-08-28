@@ -12,7 +12,8 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import {ReactiveFormsModule} from '@angular/forms';
-import { ContactusComponent } from './contactus/contactus.component'
+import { ContactusComponent } from './contactus/contactus.component';
+import { SyllabusComponent } from './syllabus/syllabus.component'
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ContactusComponent } from './contactus/contactus.component'
     AboutusComponent,
     LoginComponent,
     RegisterComponent,
-    ContactusComponent
+    ContactusComponent,
+    SyllabusComponent
   ],
   imports: [
     BrowserModule,

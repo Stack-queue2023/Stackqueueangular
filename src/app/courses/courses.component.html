@@ -18,7 +18,7 @@
     </div>
   </div>
   <div class="course-heading">
-    <div>
+    <div >
       <img src="../../assets/courses-offered.png" alt="courses-offered" title="courses-offered">
     </div>
     <!-- <div class="horizontal-line"></div> -->
@@ -34,8 +34,9 @@
       </div>
       <div class="details-button" *ngIf="isshowhide[index]">
         <p>{{courselist.coursecontent}}</p>
-        <button>View Details</button>
+        <button (click)="courseDetails(this.courselist.coursename)">View Details</button>
       </div>
     </div>
   </div>
 </div>
+

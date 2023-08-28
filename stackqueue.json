@@ -22,70 +22,80 @@
       "title":"Python image",
       "courseheading":"Python course",
       "coursecontent":"Fundamentals in Python,Python with Data Science available",
-      "courseimage":"../../assets/python.png"
+      "courseimage":"../../assets/python.png",
+      "slideimage":"../../assets/syllabus-python.png"
     },
     {
       "coursename":"Flutter",
       "title":"Flutter image",
       "courseheading":"Flutter course",
       "coursecontent":"Fundamentals in Python,Python with Data Science available",
-      "courseimage":"../../assets/flutter.png"
+      "courseimage":"../../assets/flutter.png",
+      "slideimage":"../../assets/app development.jpg"
     },
     {
       "coursename":"C language",
       "title":"C image",
       "courseheading":"C course",
       "coursecontent":"C is a general-purpose computer programming language. Fundamentals in C will be covered",
-      "courseimage":"../../assets/c.png"
+      "courseimage":"../../assets/c.png",
+      "slideimage":"../../assets/syllabus-c.png"
     },
     {
       "coursename":"React",
       "title":"React image",
       "courseheading":"Reactjs course",
       "coursecontent":"Fundamentals in Python,Python with Data Science available",
-      "courseimage":"../../assets/react.png"
+      "courseimage":"../../assets/react.png",
+      "slideimage":"../../assets/syllabus-react.png"
     },
     {
       "coursename":"JAVA",
       "title":"JAVA image",
       "courseheading":"JAVA core",
       "coursecontent":"Fundamentals in Python,Python with Data Science available",
-      "courseimage":"../../assets/java.png"
+      "courseimage":"../../assets/java.png",
+      "slideimage":"../../assets/syllabus-java.png"
     },
     {
       "coursename":"MongoDB",
       "title":"MongoDB image",
       "courseheading":"MongoDB course",
       "coursecontent":"Fundamentals in Python,Python with Data Science available",
-      "courseimage":"../../assets/mongoDb.png"
+      "courseimage":"../../assets/mongoDb.png",
+      "slideimage":"../../assets/syllabus-mongodb.jpg"
     },
     {
       "coursename":"Angular",
       "title":"Angular Framework",
       "courseheading":"Angular Framework",
       "coursecontent":"Fundamentals in Python,Python with Data Science available",
-      "courseimage":"../../assets/Angular.png"
+      "courseimage":"../../assets/Angular.png",
+      "slideimage":"../../assets/syllabus-angular.png"
     },
     {
       "coursename":"AWS",
       "title":"AWS services",
       "courseheading":"AWS Services",
       "coursecontent":"Fundamentals in Python,Python with Data Science available",
-      "courseimage":"../../assets/aws.png"
+      "courseimage":"../../assets/aws.png",
+      "slideimage":"../../assets/syllabus-AWS.png"
     },
     {
       "coursename":"MySQL",
       "title":"MySQL Database",
       "courseheading":"MySQL Database",
       "coursecontent":"Fundamentals in Python,Python with Data Science available",
-      "courseimage":"../../assets/sql.png"
+      "courseimage":"../../assets/sql.png",
+      "slideimage":"../../assets/syllabus-mysql.png"
     },
     {
       "coursename":"Fullstack",
       "title":"Fullstack web development",
       "courseheading":"Fullstack Web Development",
       "coursecontent":"Fundamentals in Python,Python with Data Science available",
-      "courseimage":"../../assets/fullstack.png"
+      "courseimage":"../../assets/fullstack.png",
+      "slideimage":"../../assets/syllabus-fullstack.png"
     }
   ]
 }

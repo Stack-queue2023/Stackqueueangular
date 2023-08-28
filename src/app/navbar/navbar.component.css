@@ -10,7 +10,7 @@
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1;
+  z-index: 4;
 }
 .Institution-logo img{
   width: 240px;
@@ -45,4 +45,12 @@
   border: none;
   font-size: 1.3rem;
   cursor: pointer;
+}
+.iconlogo .fa-regular .fa-heart{
+  color: green;
+  background-color: green;
+}
+.iconlogo .fa-solid .fa-heart-{
+  color: red;
+  background-color: red;
 }
