@@ -1,0 +1,43 @@
+.syllabus-course{
+  margin-top: 10rem;
+}
+.course-slideshow{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.main-slide img{
+  width: 800px;
+height: 400px;
+}
+.next-slides{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 20rem;
+}
+.slide-details img{
+  width: 164px;
+  height: 380px;
+}
+.slide-details{
+  z-index: 2;
+}
+.slide-details1{
+  margin-left: -10%;
+  z-index: 1;
+}
+.slide-details2{
+  margin-left: -10%;
+  z-index: 0;
+}
+.slide-details1 img{
+  width: 164px;
+  height: 360px;
+}
+.slide-details2 img{
+  width: 164px;
+  height: 340px;
+}
