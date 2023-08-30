@@ -17,7 +17,6 @@ export class HomepageComponent {
   constructor(private _http:HttpClient,private router:Router){
     this.url=`https://wa.me/${this.phoneNumber}?text=${encodeURIComponent(this.defaultMessage)}`;
     this._http.get<any>("http://localhost:3000/courses").subscribe((coursedetails)=>{
-      console.log(coursedetails);
     this.coursedetails=coursedetails;
     })
   }

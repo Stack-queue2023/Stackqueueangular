@@ -41,3 +41,25 @@ height: 400px;
   width: 164px;
   height: 340px;
 }
+.mobile-syllabus-course{
+  display: none;
+}
+@media screen and (max-width:500px) and (min-width:360px) {
+  .syllabus-course{
+    display: none;
+  }
+  .mobile-syllabus-course{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 22%;
+    margin-bottom: 20%;
+  }
+  .mobile-syllabus-contents img{
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    height: 30vh;
+  }
+}

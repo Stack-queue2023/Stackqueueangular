@@ -27,7 +27,7 @@
     <div class="courses-available" *ngFor="let courselist of coursedetails;let index=index"
       (click)="toggledetails(index)">
       <div>
-        <img src="{{courselist.courseimage}}" alt="Fullstack" title="{{courselist.title}}">
+        <img src="{{courselist.courseimage}}" alt="Fullstack" title="{{courselist.title}}" (click)="courseDetails(this.courselist.coursename)">
       </div>
       <div class="course-heading-1">
         <h1>{{courselist.courseheading}}</h1>
