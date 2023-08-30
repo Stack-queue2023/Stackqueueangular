@@ -1,19 +1,23 @@
 <div class="syllabus-course">
   <div class="course-slideshow">
     <div class="main-slide">
-      <img src="{{slideimage}}" alt="" title="">
+      <div><img src="{{slideimage}}" alt="" title=""></div>
+      <div class=""><button><b>Enroll Now</b></button></div>
     </div>
     <div class="next-slides">
       <div class="slide-details">
-        <img src="../../assets/slide-python.png" alt="">
+        <img src="{{nextslideimage}}" alt="">
       </div>
-      <div class="slide-details1">
-        <img src="../../assets/slide-angular.png" alt="">
-      </div>
-      <div class="slide-details2">
-        <img src="../../assets/slide-fullstack.png" alt="">
+      <div id="{{'slide-details'+index}}" *ngFor="let item of parsedImage;let index=index">
+        <img src="{{item.nextslideimage}}" alt="" (click)="courseDetails(this.item.coursename)">
       </div>
     </div>
+  </div>
+  <div class="course-syllabus-heading">
+    <h1>{{coursenameSelected}} Course Syllabus</h1>
+  </div>
+  <div class="syllabus-container" *ngFor="let syllabus of parsedsyllabus;let index=index">
+    <li>{{syllabus.content}}</li>
   </div>
 </div>
 

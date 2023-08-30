@@ -8,6 +8,24 @@
   justify-content: center;
   align-items: center;
 }
+.main-slide{
+  width: 800px;
+height: 400px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 1rem;
+}
+.main-slide button{
+  padding:0.6rem 1.3rem 0.6rem 1.3rem;
+  background-color: #65Baa9;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
 .main-slide img{
   width: 800px;
 height: 400px;
@@ -17,29 +35,59 @@ height: 400px;
   flex-direction: row;
   align-items: center;
   width: 20rem;
+  position: relative;
+}
+.slide-details {
+  width: 164px;
+  height: 380px;
+  z-index: 2;
+  cursor: pointer;
 }
 .slide-details img{
   width: 164px;
   height: 380px;
 }
-.slide-details{
-  z-index: 2;
-}
-.slide-details1{
-  margin-left: -10%;
+#slide-details0{
+  margin-left: -13%;
   z-index: 1;
+  width: 164px;
+  height: 360px;
+  opacity: 0.95;
+  cursor: pointer;
 }
-.slide-details2{
-  margin-left: -10%;
-  z-index: 0;
-}
-.slide-details1 img{
+#slide-details0 img{
   width: 164px;
   height: 360px;
 }
-.slide-details2 img{
+#slide-details1{
+  margin-left: -13%;
+  z-index: 0;
   width: 164px;
   height: 340px;
+  opacity: 0.85;
+  cursor: pointer;
+}
+#slide-details1 img{
+  width: 164px;
+  height: 340px;
+}
+.enroll-button{
+  display: flex;
+  justify-content: center;
+}
+.syllabus-container{
+  margin-left: 13%;
+}
+.syllabus-container li{
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+.course-syllabus-heading{
+  margin-left: 13%;
+  margin-top: 5rem;
+}
+.course-syllabus-heading h1{
+  text-transform: uppercase;
 }
 .mobile-syllabus-course{
   display: none;
