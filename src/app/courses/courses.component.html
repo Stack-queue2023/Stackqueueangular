@@ -29,12 +29,12 @@
       <div>
         <img src="{{courselist.courseimage}}" alt="Fullstack" title="{{courselist.title}}">
       </div>
-      <div>
-        <h1>{{courselist.courseheading}}</h1>
+      <div class="course-heading-name">
+        <h1 id="course-heading-names">{{courselist.courseheading}}</h1>
       </div>
       <div class="details-button" *ngIf="isshowhide[index]">
         <p>{{courselist.coursecontent}}</p>
-        <button (click)="courseDetails(this.courselist.coursename)">View Details</button>
+        <button (click)="courseDetails(this.courselist.coursename,index)">View Details</button>
       </div>
     </div>
   </div>

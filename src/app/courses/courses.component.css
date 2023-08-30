@@ -99,3 +99,13 @@
     transform: scaleY(1);
   }
 }
+.course-heading-name{
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+}
+.course-heading-name h1{
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+}
