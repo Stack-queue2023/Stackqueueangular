@@ -131,7 +131,9 @@ margin-top: 1.3rem;
 small{
   color: red;
 }
-
+.logo{
+  display: none;
+}
 @media screen and (max-width:500px) and (min-width:360px) {
   .register-mainbox{
     display: block;
@@ -159,6 +161,9 @@ small{
     border-radius: 50%;
     background: #FAEAFF;
     position: relative;
+  }
+  .logo{
+    display: block;
   }
   .formboxesimage img{
     width: 90%;

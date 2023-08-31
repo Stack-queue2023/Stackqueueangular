@@ -68,6 +68,15 @@
       </div>
       <div class="mobile-rating">
         <p>Course Rating</p>
+        <small>{{courseRating}}</small>
+        <div  class="star-icon">
+          <div *ngFor="let item of parsecourseRating;let index=index;">
+            <i class="fa-solid fa-star" style="color: #d4d71d;"></i>
+          </div>
+          <div>
+            <i class="fa-solid fa-star-half" style="color: #d4d71d;" *ngIf="starvisible"></i>
+          </div>
+        </div>
       </div>
     </div>
     <div class="mobile-syllabus-contents-inner">

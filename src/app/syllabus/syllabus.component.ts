@@ -85,11 +85,9 @@ export class SyllabusComponent {
         return coursename===course.coursename;
       });
       if(course){
-        console.log(this.courseRating);
         this.j=1;
         if(parseInt(this.splitcourseRating[1])>0){
           this.parsecourseRating=new Array(parseInt(this.courseRating));
-          console.log(this.splitcourseRating);
           this.starvisible=true;
         }
         else{
@@ -130,6 +128,9 @@ export class SyllabusComponent {
         this.storeCourseLength=this.courseLengthCount++;
         this.courseFind=course;
         this.coursenameSelected=course.coursename;
+        this.courseRating=course.rating;
+        this.splitcourseRating=this.courseRating.split('.');
+        this.parsecourseRating=parseInt(course.rating);
         this.parsedsyllabus=course.syllabus;
         if(course.coursename=="Python"){
           this.mobileslideimagearray=course.mobileimage;
@@ -137,7 +138,6 @@ export class SyllabusComponent {
         }
         else{
           this.mobileslideimages=course.mobileimage;
-          console.log(this.mobileslideimages);
           this.ispython=false;
         }
         this.courseSelection=courseDetails;
@@ -145,6 +145,14 @@ export class SyllabusComponent {
       });
       if(course){
         this.j=1;
+        if(parseInt(this.splitcourseRating[1])>0){
+          this.parsecourseRating=new Array(parseInt(this.courseRating));
+          this.starvisible=true;
+        }
+        else{
+          this.starvisible=false;
+          this.parsecourseRating=new Array(parseInt(this.courseRating));
+        }
         for(this.i=0;this.i<3;this.i++){
           if(this.courseSelection[(this.storeCourseLength-1)+this.j]){
           this.checkCount++;

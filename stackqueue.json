@@ -727,6 +727,8 @@
       "coursecontent":"Microsoft's Azure, one of the most popular and in-demand Cloud Computing services, is covered in-depth in this Azure",
       "courseimage":"../../assets/AZURE.png",
       "slideimage":"../../assets/syllabus-azure.svg",
+      "mobileimage":"./assets/syllabus-azure.svg",
+      "mobileslideimage":"./assets/mobile-slide-azure.svg",
       "nextslideimage":"../../assets/slide-azure.png",
       "rating":"5.0",
       "syllabus":[

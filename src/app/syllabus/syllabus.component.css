@@ -272,7 +272,7 @@ height: 400px;
   }
   .mobile-rating p{
     margin-left: 20%;
-    margin-top: 15%;
+    margin-top: 10%;
     font-weight: bolder;
     font-size: 4vw;
   }
@@ -296,5 +296,15 @@ height: 400px;
     list-style: none;
     text-align: left;
     font-weight: lighter;
+  }
+  small{
+    margin-left: 40%;
+    font-size: 6vw;
+    font-weight: bold;
+    margin-top: 5%;
+  }
+  .star-icon{
+    margin-left: 10%;
+    margin-top: 5%;
   }
 }

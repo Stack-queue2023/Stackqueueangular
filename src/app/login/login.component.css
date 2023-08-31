@@ -122,7 +122,9 @@ margin-top: 1.3rem;
 small{
   color: red;
 }
-
+.logo{
+  display: none;
+}
 @media screen and (max-width:500px) and (min-width:360px) {
 .login-mainbox{
   display: block;
@@ -139,6 +141,9 @@ small{
 }
 .formboxes{
   position: relative;
+}
+.logo{
+  display: block;
 }
 .formboxes p:nth-child(2){
   position: absolute;
