@@ -20,4 +20,10 @@ export class LoginComponent {
     Email:['',[Validators.required,Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,5}$")]],
     Password:['',[Validators.required,Validators.pattern("(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&].{8,}")]]
   })
+
+  userLoginDetails(){
+    sessionStorage.setItem('isLoggedin','true');
+    this.route.navigateByUrl("admissionform");
+  }
+
 }
