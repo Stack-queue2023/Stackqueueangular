@@ -25,18 +25,29 @@ export class SyllabusComponent {
   parsedsyllabus:any;
   storesyllabus:any;
   coursenameSelected:any;
+  mobileslideimage:any;
+  mobileslideimages:any;
+  mobileslideimagearray:any=[];
+  ispython:boolean=false;
   constructor(private _http:HttpClient){
     this.courseLengthCount=1;
     this.coursenameSelected=sessionStorage.getItem('coursename');
     this.courseSyllabus=sessionStorage.getItem('coursessyllabusdetails');
     this.parsedsyllabus=JSON.parse(this.courseSyllabus);
     this.storesyllabus=this.parsedsyllabus[0];
-    console.log(this.storesyllabus.content0);
     this.slideimage=sessionStorage.getItem('slideimg');
     this.nextslideimage=sessionStorage.getItem('nextslideimage');
     this.parseslideimage=sessionStorage.getItem('nextcoursedetails');
     this.parsedImage=JSON.parse(this.parseslideimage);
-    console.log(this.parsedImage);
+    this.mobileslideimage=sessionStorage.getItem('mobilecourseimage');
+    if(this.coursenameSelected=="Python"){
+      this.mobileslideimagearray=JSON.parse(this.mobileslideimage);
+      this.ispython=true;
+    }
+    else{
+      this.mobileslideimages=this.mobileslideimage;
+      this.ispython=false;
+    }
   }
 
 
@@ -45,7 +56,6 @@ export class SyllabusComponent {
       this.checkCount=0;
       const course=courseDetails.find((course:any)=>{
         this.storeCourseLength=this.courseLengthCount++;
-        console.log(course.syllabus);
         this.courseFind=course;
         this.coursenameSelected=course.coursename;
         this.parsedsyllabus=course.syllabus;
@@ -86,5 +96,20 @@ export class SyllabusComponent {
       }
 
     })
+  }
+
+  pythonImageChange(index:any){
+    if(index==0){
+      var temp=this.mobileslideimagearray[index];
+      this.mobileslideimagearray[index]=this.mobileslideimagearray[2];
+      this.mobileslideimagearray[2]=this.mobileslideimagearray[1];
+      this.mobileslideimagearray[1]=temp;
+    }
+    else if(index==2){
+      var temp=this.mobileslideimagearray[0];
+      this.mobileslideimagearray[0]=this.mobileslideimagearray[index];
+      this.mobileslideimagearray[index]=this.mobileslideimagearray[1];
+      this.mobileslideimagearray[1]=temp;
+    }
   }
 }

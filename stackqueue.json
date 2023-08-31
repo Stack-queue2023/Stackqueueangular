@@ -24,6 +24,7 @@
       "coursecontent":"Fundamentals in Python,Python with Data Science available",
       "courseimage":"../../assets/python.png",
       "slideimage":"../../assets/syllabus-python.png",
+      "mobileimage":["./assets/mobile-python-1.svg","./assets/mobile-python-2.svg","./assets/mobile-python-3.svg"],
       "nextslideimage":"../../assets/slide-python.png",
       "syllabus":[
         {
@@ -99,6 +100,7 @@
       "courseimage":"../../assets/flutter.png",
       "slideimage":"../../assets/syllabus-flutter.png",
       "nextslideimage":"../../assets/slide-flutter.png",
+      "mobileimage":"./assets/mobile-flutter.svg",
       "syllabus":[
         {
           "content":""
@@ -121,6 +123,7 @@
       "coursecontent":"C is a general-purpose computer programming language. Fundamentals in C will be covered",
       "courseimage":"../../assets/c.png",
       "slideimage":"../../assets/syllabus-c.png",
+      "mobileimage":"./assets/syllabus-c.png",
       "nextslideimage":"../../assets/slide-c.png"
     },
     {
@@ -130,6 +133,7 @@
       "coursecontent":"Fundamentals in Python,Python with Data Science available",
       "courseimage":"../../assets/react.png",
       "slideimage":"../../assets/syllabus-react.png",
+      "mobileimage":"./assets/syllabus-react.png",
       "nextslideimage":"../../assets/slide-react.png",
       "syllabus":[
         {
@@ -195,6 +199,7 @@
       "coursecontent":"Fundamentals in Python,Python with Data Science available",
       "courseimage":"../../assets/java.png",
       "slideimage":"../../assets/syllabus-java.png",
+      "mobileimage":"./assets/syllabus-java.png",
       "nextslideimage":"../../assets/slide-java.png",
       "syllabus":[
         {
@@ -266,6 +271,7 @@
       "coursecontent":"Fundamentals in Python,Python with Data Science available",
       "courseimage":"../../assets/mongoDb.png",
       "slideimage":"../../assets/syllabus-mongodb.jpg",
+      "mobileimage":"./assets/syllabus-mongodb.jpg",
       "nextslideimage":"../../assets/slide-mongodb.png"
     },
     {
@@ -275,6 +281,7 @@
       "coursecontent":"Fundamentals in Python,Python with Data Science available",
       "courseimage":"../../assets/Angular.png",
       "slideimage":"../../assets/syllabus-angular.png",
+      "mobileimage":"./assets/syllabus-angular.png",
       "nextslideimage":"../../assets/slide-angular.png"
     },
     {
@@ -284,6 +291,7 @@
       "coursecontent":"Fundamentals in Python,Python with Data Science available",
       "courseimage":"../../assets/aws.png",
       "slideimage":"../../assets/syllabus-aws.png",
+      "mobileimage":"./assets/syllabus-aws.png",
       "nextslideimage":"../../assets/slide-aws.png"
     },
     {
@@ -293,6 +301,7 @@
       "coursecontent":"Fundamentals in Python,Python with Data Science available",
       "courseimage":"../../assets/sql.png",
       "slideimage":"../../assets/syllabus-sql.png",
+      "mobileimage":"./assets/syllabus-sql.png",
       "nextslideimage":"../../assets/slide-sql.png",
       "syllabus":[
         {
@@ -364,6 +373,7 @@
       "coursecontent":"Fundamentals in Python,Python with Data Science available",
       "courseimage":"../../assets/fullstack.png",
       "slideimage":"../../assets/syllabus-fullstack.png",
+      "mobileimage":"./assets/syllabus-fullstack.png",
       "nextslideimage":"../../assets/slide-fullstack.png",
       "syllabus":[
         {
@@ -391,6 +401,7 @@
       "coursecontent":"Fundamentals in Python,Python with Data Science available",
       "courseimage":"../../assets/DEVOPS.png",
       "slideimage":"../../assets/syllabus-devops.png",
+      "mobileimage":"./assets/syllabus-devops.png",
       "nextslideimage":"../../assets/slide-devops.png",
       "syllabus":[
         {

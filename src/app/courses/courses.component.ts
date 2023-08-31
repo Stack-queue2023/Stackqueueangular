@@ -24,7 +24,6 @@ export class CoursesComponent {
 
   constructor(private _http:HttpClient,private route:Router){
     this._http.get<any>("http://localhost:3000/courses").subscribe((coursedetails)=>{
-    console.log(coursedetails);
     this.coursedetails=coursedetails;
     })
   }
@@ -41,14 +40,11 @@ export class CoursesComponent {
       const course=courseselection.find((coursefind:any)=>{
         this.courseFind=coursefind;
         this.courseSyllabus=coursefind.syllabus;
-        console.log(coursefind.syllabus);
         this.courseName=coursefind.coursename;
         return coursename===coursefind.coursename;
       });
       if(course){
-        console.log(this.courseFind.slideimage);
         for(this.i=0;this.i<2;this.i++){
-          console.log(this.nextCoursesSlide);
           if(this.courseSelection[index+this.j]){
             this.checkCount++;
             this.nextCoursesSlide[this.i]=this.courseSelection[index+this.j];
@@ -73,6 +69,12 @@ export class CoursesComponent {
         sessionStorage.setItem('nextcoursedetails',JSON.stringify(this.nextCoursesSlide));
         sessionStorage.setItem('slideimg',this.courseFind.slideimage);
         sessionStorage.setItem('nextslideimage',this.courseFind.nextslideimage);
+        if(this.courseName=="Python"){
+          sessionStorage.setItem('mobilecourseimage',JSON.stringify(this.courseFind.mobileimage));
+        }
+        else{
+          sessionStorage.setItem('mobilecourseimage',this.courseFind.mobileimage);
+        }
         this.route.navigateByUrl('/coursesyllabus');
       }
       else{

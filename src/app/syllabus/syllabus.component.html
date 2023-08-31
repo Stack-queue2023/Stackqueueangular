@@ -24,15 +24,41 @@
 <!-- mobile view -->
 
 <div class="mobile-syllabus-course">
-  <div class="mobile-syllabus-contents">
-    <img src="{{slideimage}}" alt="course">
+  <div class="mobile-syllabus-contents" *ngIf="!ispython">
+    <img src="{{mobileslideimages}}" alt="course">
+    <button>Enroll now</button>
+  </div>
+  <div class="mobile-syllabus-contents python-slides" *ngIf="ispython">
+    <div class="slides">
+      <div class="python-images" *ngFor="let images of mobileslideimagearray">
+        <img src="{{images}}" alt="course">
+      </div>
+    </div>
+    <div class="slides">
+      <div class="python-boxes" *ngFor="let images of mobileslideimagearray; let index=index">
+        <img src="{{images}}" alt="course"  (click)="pythonImageChange(index)">
+      </div>
+      <button>Enroll now</button>
+    </div>
   </div>
   <div class="mobile-syllabus-contents">
-    <div class="mobile-syllabus-content-boxes">
-
+    <div class="mobile-syllabus-contents-inner">
+      <div class="mobile-rating">
+        <div class="course-changing" *ngFor="let item of parsedImage;let index=index">
+          <img src="{{item.nextslideimage}}" alt="" (click)="courseDetails(this.item.coursename)">
+        </div>
+      </div>
+      <div class="mobile-rating">
+        <p>Course Rating</p>
+      </div>
     </div>
-    <div class="mobile-syllabus-content-boxes">
-
+    <div class="mobile-syllabus-contents-inner">
+      <li><b>SYLLABUS</b></li>
     </div>
+    <div class="mobile-syllabus-contents-inner" *ngFor="let syllabus of parsedsyllabus;let index=index">
+      <li>{{syllabus.content}}</li>
+    </div>
+
   </div>
 </div>
+
