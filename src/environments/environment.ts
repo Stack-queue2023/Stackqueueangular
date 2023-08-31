@@ -1,4 +1,4 @@
-export const environment={
+export const environment = {
   firebase: {
     projectId: 'stack-queue-40c6a',
     appId: '1:124634298934:web:a3c624f1288f2545697697',
@@ -8,7 +8,7 @@ export const environment={
     messagingSenderId: '124634298934',
     measurementId: 'G-DS9H2JRWD7',
   },
-  firebaseConfig :{
+   firebaseConfig : {
     apiKey: "AIzaSyB67-uaAHy0FhcOaAee5rTrAPGg8XiNiqo",
     authDomain: "stack-queue-40c6a.firebaseapp.com",
     projectId: "stack-queue-40c6a",
@@ -17,6 +17,5 @@ export const environment={
     appId: "1:124634298934:web:a3c624f1288f2545697697",
     measurementId: "G-DS9H2JRWD7"
   }
-}
-
+};
 
