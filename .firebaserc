@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "stack-queue-40c6a"
+  },
+  "targets": {
+    "stack-queue-40c6a": {
+      "hosting": {
+        "STACK-QUEUE": [
+          "stack-queue-2023"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+*{
+  box-sizing: border-box;
+}
+.stack-queue-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem 0 2rem;
+  background-color: #faeaff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 4;
+}
+.Institution-logo img{
+  width: 240px;
+  height: 108px;
+}
+.navigation-links{
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.navigation-links a{
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+.Navbar-registerbutton .navigation-links .navigation-active{
+  border-bottom: 2px solid #772ED6;
+  color:#772ED6 ;
+}
+.Navbar-registerbutton{
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.register-button button{
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  color: black;
+  background-color: #65Baa9;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.mobile-stack-queue-header{
+  display: none;
+}
+.icons{
+  cursor: pointer;
+}
+.iconlogo .fa-regular .fa-heart{
+color: green;
+background-color: green;
+}
+.iconlogo .fa-solid .fa-heart-{
+color: red;
+background-color: red;
+}
+
+
+@media screen and (max-width:500px) and (min-width:360px) {
+  .stack-queue-header{
+    display: none;
+  }
+  .mobile-stack-queue-header{
+    display: block;
+    background-color: #faeaff;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+  }
+  .Institution-logo img{
+    width: 163px;
+    height: 80px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .mobile-stack-queue-header-icons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-right: 10px;
+  }
+}

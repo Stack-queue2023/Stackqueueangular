@@ -1,0 +1,63 @@
+<div class="main-course-details">
+  <div class="course-details">
+    <div>
+      <img src="../../assets/courses-header.png" alt="courses-head" title="courses-head-image">
+    </div>
+    <div class="course-instructions">
+      <div>
+        <h1>Course Details</h1>
+      </div>
+      <div class="course-details-para">
+        <p><i class="fa-solid fa-book-open"></i>&nbsp;&nbsp;All Courses should have <b>life time access</b>.</p>
+        <p><i class="fa-solid fa-book-open"></i>&nbsp;Clarify your doubts even after completed the course.</p>
+        <p><i class="fa-solid fa-book-open"></i>&nbsp;&nbsp;Average course duration is <b>40+ hours</b>.</p>
+        <p><i class="fa-solid fa-book-open"></i>&nbsp;&nbsp;For every course, one project will be done.</p>
+        <p><i class="fa-solid fa-book-open"></i>&nbsp;&nbsp;<b>MSME certified</b> certification will be provided.</p>
+        <p><i class="fa-solid fa-book-open"></i>&nbsp;Separate <b>exciting gifts</b> will be provided for course enrollment.</p>
+      </div>
+    </div>
+  </div>
+  <div class="course-heading">
+    <div >
+      <img src="../../assets/courses-offered.png" alt="courses-offered" title="courses-offered">
+    </div>
+    <!-- <div class="horizontal-line"></div> -->
+  </div>
+  <div class="courses">
+    <div class="courses-available" *ngFor="let courselist of coursedetails;let index=index"
+      (click)="toggledetails(index)">
+      <div>
+        <img src="{{courselist.courseimage}}" alt="Fullstack" title="{{courselist.title}}">
+      </div>
+      <div class="course-heading-name">
+        <h1 id="course-heading-names">{{courselist.courseheading}}</h1>
+      </div>
+      <div class="details-button" *ngIf="isshowhide[index]">
+        <p>{{courselist.coursecontent}}</p>
+        <button (click)="courseDetails(this.courselist.coursename,index)">View Details</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- mobile view -->
+<div class="mobile-course-details">
+  <div class="course-heading">
+    <div >
+      <img src="../../assets/courses-offered.png" alt="courses-offered" title="courses-offered">
+    </div>
+  </div>
+  <div class="courses">
+    <div class="courses-available" *ngFor="let courselist of coursedetails;let index=index"
+      (click)="toggledetails(index)">
+      <div>
+        <img src="{{courselist.courseimage}}" alt="Fullstack" title="{{courselist.title}}" (click)="mobilecourseDetails(this.courselist.coursename,index)">
+      </div>
+      <div class="details-button" *ngIf="isshowhide[index]">
+        <p>{{courselist.coursecontent}}</p>
+        <button (click)="courseDetails(this.courselist.coursename,index)">View Details</button>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,133 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!------------------------------ Header ------------------------------>
+<!-- <header>
+  <div class="nav-bar">
+    <div class="nav-bar-boxes">
+      <img src="../../assets/Logo.jpeg.jpg" alt="image">
+    </div>
+    <div class="nav-bar-boxes">
+      <nav>
+        <a href="">Courses </a>
+        <a href="">About us </a>
+        <a href="">Contact </a>
+      </nav>
+    </div>
+    <div class="nav-bar-boxes">
+      <button>Login</button>
+    </div>
+  </div>
+</header> -->
+<!------------------------------ Header ------------------------------>
+
+<!----------------------------------- Form Container  ------------------------->
+<div class="logo-form">
+  <div class="image">
+    <img src="../assets/Logo.jpeg.jpg" alt="">
+  </div>
+<div class="form-container">
+  <form class="form-container flex" [formGroup]="AdmissionDetails" (ngSubmit)="AdmissionDetails.valid && getAdmissionDetails()">
+
+    <div class="form-container-formset">
+      <div class="input-group">
+        <label for="">Student's Name</label>
+      <input type="text" placeholder="Name of the Student" formControlName="Studentname" class="form-content">
+      <small *ngIf="AdmissionDetails.controls['Studentname'].errors?.['required'] && AdmissionDetails.controls['Studentname'].dirty">Student name is required</small>
+      <small *ngIf="AdmissionDetails.controls['Studentname'].errors?.['pattern']">Enter Valid username</small>
+    </div>
+    <div class="input-group">
+      <label for="">Student's Address</label>
+      <input type="text" placeholder="Address of the Student" formControlName="Studentaddress" class="form-content">
+      <small *ngIf="AdmissionDetails.controls['Studentaddress'].errors?.['required'] && AdmissionDetails.controls['Studentaddress'].dirty">Student address is required</small>
+      <small *ngIf="AdmissionDetails.controls['Studentaddress'].errors?.['minlength']">Enter Valid address</small>
+    </div>
+    <div class="input-group">
+      <label for="">Student's Phonenumber</label>
+      <input type="tel" placeholder="Phone number of the Student" formControlName="Studentphonenumber" class="form-content" maxlength="10">
+      <small *ngIf="AdmissionDetails.controls['Studentphonenumber'].errors?.['required'] && AdmissionDetails.controls['Studentphonenumber'].dirty">Student Phonenumber is required</small>
+      <small *ngIf="AdmissionDetails.controls['Studentphonenumber'].errors?.['pattern']">Enter Valid number</small>
+    </div>
+    <div class="input-group">
+      <label for="">Student's Mail ID</label>
+      <input type="email" placeholder="Email ID of the Student" formControlName="Studentemail" class="form-content">
+      <small *ngIf="AdmissionDetails.controls['Studentemail'].errors?.['required'] && AdmissionDetails.controls['Studentemail'].dirty">Student email ID is required</small>
+      <small *ngIf="AdmissionDetails.controls['Studentemail'].errors?.['pattern']">Enter Valid email ID</small>
+    </div>
+    <div class="input-group">
+      <label for="">Date of Joining</label>
+      <input type="date" placeholder="Month of joining" formControlName="Studentjoined" class="form-content" #datejoined (change)="dateJoined(datejoined.value)">
+      <small *ngIf="AdmissionDetails.controls['Studentjoined'].errors?.['required'] && AdmissionDetails.controls['Studentjoined'].touched">Student Joining date is required</small>
+      <small *ngIf="AdmissionDetails.controls['Studentjoined'].errors?.['pattern']">Choose valid date</small>
+    </div>
+    <div class="input-group">
+      <label for="">Course name</label>
+      <select name="" id="" class="form-content" formControlName="coursename">
+        <option value="" disabled selected>Select course name</option>
+        <option value="Java">JAVA</option>
+        <option value="C">C language</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="">Course mode</label>
+      <select name="" id="" class="form-content">
+        <option value="" selected disabled>Select Course mode</option>
+        <option value="Online">Online Mode</option>
+        <option value="Offline">Offline Mode</option>
+      </select>
+    </div>
+    </div>
+
+    <div class="form-container-formset">
+    <div class="input-group">
+      <label for="">Course Duration</label>
+      <input type="text" placeholder="Course duration" formControlName="Course duration" class="form-content">
+    </div>
+    <div class="input-group">
+      <label for="">Batch Slot</label>
+      <select name="" id="" class="form-content">
+        <option value="" selected disabled>Select Batch slot</option>
+        <option value="Morning">Morning</option>
+        <option value="afternoon">Afternoon</option>
+        <option value="Evening">Evening</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="">Course fee</label>
+      <input type="tel" placeholder="Course fee" formControlName="Studentfee" class="form-content">
+    </div>
+    <div class="input-group">
+      <label for="">Payment Mode</label>
+      <select name="" id="" class="form-content" formControlName="paymentmode">
+        <option value="" selected disabled>Select Payment mode</option>
+        <option value="Cash">Cash</option>
+        <option value="Google Pay">Google Pay</option>
+        <option value="Phonepay">Phonepay</option>
+        <option value="Paytm">Paytm</option>
+      </select>
+      <small *ngIf="AdmissionDetails.controls['paymentmode'].errors?.['required'] && AdmissionDetails.controls['paymentmode'].dirty">Select Payment Mode</small>
+    </div>
+    <div class="input-group">
+      <label for="">Remaining Amount</label>
+      <input type="tel" placeholder="Remaining Amount" formControlName="Remaining Amount" class="form-content">
+    </div>
+    <div class="input-group">
+      <label for="">Next Due Date</label>
+      <input type="date" placeholder="Next due date" formControlName="duedate"  class="form-content">
+    </div>
+    <div class="input-file">
+      <input type="file" placeholder="Student Photography" formControlName="Studentphoto"  accept=".jpg,.png">
+    </div>
+    </div>
+
+    <div class="submit-button">
+      <div>
+      <button>Submit Details</button>
+    </div>
+    </div>
+  </form>
+</div>
+</div>
+<!----------------------------------- Form Container  ------------------------->
+

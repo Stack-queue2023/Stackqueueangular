@@ -1,0 +1,765 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "courses":[
+    {
+      "coursename":"Python",
+      "title":"Python image",
+      "courseheading":"Python course",
+      "coursecontent":"Python, the most effective, adaptable, and in-demand programming language right now, is covered in its fundamentals. Starting from start, work your way up to writing programs to collect, clean, analyze, and visualize data",
+      "courseimage":"../../assets/python.png",
+      "slideimage":"../../assets/syllabus-python.png",
+      "mobileimage":["./assets/mobile-python-1.svg","./assets/mobile-python-2.svg","./assets/mobile-python-3.svg"],
+      "mobileslideimage":"./assets/mobile-slide-python.svg",
+      "nextslideimage":"../../assets/slide-python.png",
+      "rating":"5.0",
+      "syllabus":[
+        {
+          "content":"Introduction to Python"
+        },
+        {
+          "content":"Environment setup, Basic I/O."
+        },
+        {
+          "content":"Conditional Branching control statements: If-Else, elif. "
+        },
+        {
+          "content":"Conditional looping control statements: while, do-while, for."
+        },
+        {
+          "content":"Functions-Function Arguments-Default, Keyword, Arbitrary"
+        },
+        {
+          "content":"Functions-Recursion , Lambda function "
+        },
+        {
+          "content":"Data Structures-List, Tuple, Stack , Queue "
+        },
+        {
+          "content":"Data Structures -Dictionary, Set in details "
+        },
+        {
+          "content":"Modules and Package-User program as modules and Packages. "
+        },
+        {
+          "content":"Files-Different types of files-File operation."
+        },
+        {
+          "content":"Errors and Exceptions Handling-Errors,Assert, Try, except, Finally "
+        },
+        {
+          "content":"Exceptions Try, Finally, User defined exception. "
+        },
+        {
+          "content":"Object Oriented Programming-Class, Object, Inheritance, and Polymorphism. "
+        },
+        {
+          "content":"Reference Types- Iterator, Generator. "
+        },
+        {
+          "content":"Reference Types -Closure, Decorators. "
+        },
+        {
+          "content":"Thread-Multithread. "
+        },
+        {
+          "content":"Graphical User Interface-Textbox, Listbox, Option Button, Menu, Canvas. "
+        },
+        {
+          "content":"Database Connectivity-Mysql, Create table, Insert table, View the table."
+        },
+        {
+          "content":"Networking-Client and server program. "
+        },
+        {
+          "content":"Standard Library-Support the advanced library. "
+        },
+        {
+          "content":"Mini Real time Projects."
+        }
+      ]
+    },
+    {
+      "coursename":"Flutter",
+      "title":"Flutter image",
+      "courseheading":"Flutter course",
+      "coursecontent":"You acquire the skills and knowledge necessary to construct visually appealing, high-performing mobile apps for both iOS and Android by enrolling in our Flutter app development course. ",
+      "courseimage":"../../assets/flutter.png",
+      "slideimage":"../../assets/syllabus-flutter.png",
+      "nextslideimage":"../../assets/slide-flutter.png",
+      "mobileimage":"./assets/mobile-flutter.svg",
+      "mobileslideimage":"./assets/mobile-slide-flutter.svg",
+      "rating":"4.0",
+      "syllabus":[
+        {
+          "content":"Introduction to Flutter"
+        },
+        {
+          "content":"Flutter & Dart Basics I- Getting a Solid Foundation [ROLLDICE APP]"
+        },
+        {
+          "content":"Flutter & Dart Basics II - Fundamentals Deep Dive [QUIZ APP]"
+        },
+        {
+          "content":"Debugging Flutter Adding Interactivity, More Widgets & Theming [EXPENSE TRACKER APP]"
+        },
+        {
+          "content":"Building Responsive & Adaptive User Interfaces [EXPENSE TRACKER APP]"
+        },
+        {
+          "content":"Flutter & Dart Internals [TODO APP]"
+        },
+        {
+          "content":"Building Multi-Screen Apps & Navigating Between Screens [MEALS APP]"
+        },
+        {
+          "content":"Managing App-wide State [MEALS APP]"
+        },
+        {
+          "content":"Handling User Input & Working with Forms [SHOPPING LIST APP]"
+        },
+        {
+          "content":"Connecting a Backend & Sending HTTP Requests [SHOPPING LIST APP]"
+        },
+        {
+          "content":"Using Native Device Features (e.g., Camera) [FAVORITE PLACES APP]"
+        },
+        {
+          "content":"Push Notifications & More: Building a Chat App with Flutter & Firebase"
+        },
+        {
+          "content":"About The Course Update"
+        },
+        {
+          "content":"Next Steps & Roundup"
+        }
+      ]
+    },
+    {
+      "coursename":"C language",
+      "title":"C image",
+      "courseheading":"C course",
+      "coursecontent":"Learn to write strong and efficient code in C with this beginner-friendly certification course in C Programming",
+      "courseimage":"../../assets/c.png",
+      "slideimage":"../../assets/syllabus-c.png",
+      "mobileimage":"./assets/syllabus-c.png",
+      "mobileslideimage":"./assets/mobile-slide-c.svg",
+      "nextslideimage":"../../assets/slide-c.png",
+      "rating":"3.5",
+      "syllabus":[
+        {
+          "content":"Introduction to C Programming"
+        },
+        {
+          "content":" Basic Concepts"
+        },
+        {
+          "content":"Keywords"
+        },
+        {
+          "content":"Variables"
+        },
+        {
+          "content":"Data Types"
+        },
+        {
+          "content":"Operators and Expressions"
+        },
+        {
+          "content":"Input-Output Library Functions"
+        },
+        {
+          "content":"Control statements"
+        },
+        {
+          "content":"Pointer"
+        },
+        {
+          "content":"Pointer and Function"
+        },
+        {
+          "content":"Array"
+        },
+        {
+          "content":"Pointer and Array"
+        },
+        {
+          "content":"Array and Function"
+        },
+        {
+          "content":"Dynamic memory allocation"
+        },
+        {
+          "content":"Strings"
+        },
+        {
+          "content":"Structure"
+        },
+        {
+          "content":"Structure and Function"
+        },
+        {
+          "content":"Union and Enumeration and typedef"
+        },
+        {
+          "content":"File Handling"
+        }
+      ]
+    },
+    {
+      "coursename":"React",
+      "title":"React image",
+      "courseheading":"Reactjs course",
+      "coursecontent":"Learn the fundamentals of contemporary web development. You will learn ReactJS from scratch and get a solid understanding of its fundamental ideas with the help of the in-depth course modules.",
+      "courseimage":"../../assets/react.png",
+      "slideimage":"../../assets/syllabus-react.png",
+      "mobileimage":"./assets/syllabus-react.png",
+      "mobileslideimage":"./assets/mobile-slide-react.svg",
+      "nextslideimage":"../../assets/slide-react.png",
+      "rating":"4.5",
+      "syllabus":[
+        {
+          "content":"Introduction to React"
+        },
+        {
+          "content":"Setting Up a React Environment"
+        },
+        {
+          "content":"JSX and Components"
+        },
+        {
+          "content":"Props and State"
+        },
+        {
+          "content":"Component Lifecycle"
+        },
+        {
+          "content":"Handling Events"
+        },
+        {
+          "content":"Conditional Rendering"
+        },
+        {
+          "content":"Lists and Keys"
+        },
+        {
+          "content":"State Management Libraries"
+        },
+        {
+          "content":"Redux Fundamentals"
+        },
+        {
+          "content":"Connecting React and Redux"
+        },
+        {
+          "content":"React Router"
+        },
+        {
+          "content":"Route Parameters and Dynamic Routing"
+        },
+        {
+          "content":"Styling and UI Libraries"
+        },
+        {
+          "content":"Hooks"
+        },
+        {
+          "content":"Context API"
+        },
+        {
+          "content":"Performance Optimization"
+        },
+        {
+          "content":"Error Handling"
+        }
+      ]
+    },
+    {
+      "coursename":"JAVA",
+      "title":"JAVA image",
+      "courseheading":"JAVA core",
+      "coursecontent":"With the help of this Java online/offline course, you may learn the principles of Java programming and become a great coder.-",
+      "courseimage":"../../assets/java.png",
+      "slideimage":"../../assets/syllabus-java.png",
+      "mobileimage":"./assets/syllabus-java.png",
+      "mobileslideimage":"./assets/mobile-slide-java.svg",
+      "nextslideimage":"../../assets/slide-java.png",
+      "rating":"4.0",
+      "syllabus":[
+        {
+          "content":"Intro to Java Platform & Language"
+        },
+        {
+          "content":"JVM, JRE, JDK"
+        },
+        {
+          "content":"JVM Architecture"
+        },
+        {
+          "content":"Data types - Primitive, Arrays"
+        },
+        {
+          "content":"Operators"
+        },
+        {
+          "content":"Branching (if, switch)"
+        },
+        {
+          "content":"Looping (while, for)"
+        },
+        {
+          "content":"Intro to OOP in Java"
+        },
+        {
+          "content":"Classes, fields, methods, constructors"
+        },
+        {
+          "content":"Keywords this, super & Modifiers"
+        },
+        {
+          "content":"Interfaces & Inheritance"
+        },
+        {
+          "content":"Method overloading & Overriding"
+        },
+        {
+          "content":"Abstract classes"
+        },
+        {
+          "content":"Access modifiers & Exception Handling"
+        },
+        {
+          "content":"Collections"
+        },
+        {
+          "content":"File Handling"
+        },
+        {
+          "content":"Garbage collection"
+        },
+        {
+          "content":"Java 8 features"
+        },
+        {
+          "content":"Intro to Functional programming"
+        },
+        {
+          "content":"GUI & real time projects"
+        }
+      ]
+    },
+    {
+      "coursename":"MongoDB",
+      "title":"MongoDB image",
+      "courseheading":"MongoDB course",
+      "coursecontent":"NoSQL database management solution with the greatest adoption: Learn how to use MongoDB and use it into a variety of practical software applications.",
+      "courseimage":"../../assets/mongoDb.png",
+      "slideimage":"../../assets/syllabus-mongodb.jpg",
+      "mobileimage":"./assets/syllabus-mongodb.jpg",
+      "mobileslideimage":"./assets/mobile-slide-mongodb.svg",
+      "nextslideimage":"../../assets/slide-mongodb.png",
+      "rating":"3.5",
+      "syllabus":[
+        {
+          "content":"Introduction to MongoDB"
+        },
+        {
+          "content":"Basic CRUD Operations"
+        },
+        {
+          "content":"Data Modeling"
+        },
+        {
+          "content":"Indexing and Aggregation"
+        },
+        {
+          "content":"Advanced Queries"
+        },
+        {
+          "content":"Data Manipulation"
+        },
+        {
+          "content":"Data Administration"
+        },
+        {
+          "content":"Transactions and Concurrency"
+        },
+        {
+          "content":"Full-text Search and Text Indexes"
+        },
+        {
+          "content":"Data Modeling Best Practices"
+        },
+        {
+          "content":"Integration with Programming Languages"
+        },
+        {
+          "content":"MongoDB tools"
+        },
+        {
+          "content":"MongoDB Cloud"
+        },
+        {
+          "content":"CRUD Documents"
+        }
+      ]
+    },
+    {
+      "coursename":"Angular",
+      "title":"Angular Framework",
+      "courseheading":"Angular Framework",
+      "coursecontent":"This Angular course for beginners will provide you all the skills needed to create intricate and highly responsive single-page applications",
+      "courseimage":"../../assets/Angular.png",
+      "slideimage":"../../assets/syllabus-angular.png",
+      "mobileimage":"./assets/syllabus-angular.png",
+      "mobileslideimage":"./assets/mobile-slide-angular.svg",
+      "nextslideimage":"../../assets/slide-angular.png",
+      "rating":"4.5",
+      "syllabus":[
+        {
+          "content":"Introduction to Angular"
+        },
+        {
+          "content":"Introduction to Typescript"
+        },
+        {
+          "content":"Typescript Data Types and Functions"
+        },
+        {
+          "content":"Classes and Interface"
+        },
+        {
+          "content":"Typescript decorators and tsconfig file"
+        },
+        {
+          "content":"Built-in Directives"
+        },
+        {
+          "content":"Built-in Pipes"
+        },
+        {
+          "content":"Angular Installation and Binding Syntax"
+        },
+        {
+          "content":"Lifecycle Hook and Component Communication"
+        },
+        {
+          "content":"Dependency Injection"
+        },
+        {
+          "content":"HttpClient and RxJs"
+        },
+        {
+          "content":"Angular Guards"
+        },
+        {
+          "content":"observables and promise"
+        }
+      ]
+    },
+    {
+      "coursename":"AWS",
+      "title":"AWS services",
+      "courseheading":"AWS Services",
+      "coursecontent":"With an introduction curriculum centered on AWS cloud computing solutions, you may increase your IT skill set",
+      "courseimage":"../../assets/aws.png",
+      "mobileimage":"./assets/syllabus-AWS.png",
+      "mobileslideimage":"./assets/mobile-slide-aws.svg",
+      "slideimage":"../../assets/syllabus-aws.png",
+      "nextslideimage":"../../assets/slide-aws.png",
+      "rating":"5.0",
+      "syllabus":[
+        {
+          "content":"Introduction to AWS"
+        },
+        {
+          "content":"Basic account setup "
+        },
+        {
+          "content":"exploring tools on AWS Site"
+        },
+        {
+          "content":"AWS console"
+        },
+        {
+          "content":"region"
+        },
+        {
+          "content":"EC2 instances"
+        },
+        {
+          "content":"IAM roles "
+        },
+        {
+          "content":"S3 buckets"
+        }
+      ]
+    },
+    {
+      "coursename":"MySQL",
+      "title":"MySQL Database",
+      "courseheading":"MySQL Database",
+      "coursecontent":"The ability to write SQL queries ,Utilize complex SQL techniques like views, transactions, stored procedures, and joins to create queries with greater strength. ",
+      "courseimage":"../../assets/sql.png",
+      "slideimage":"../../assets/syllabus-sql.png",
+      "mobileimage":"./assets/syllabus-sql.png",
+      "mobileslideimage":"./assets/mobile-slide-mysql.svg",
+      "nextslideimage":"../../assets/slide-sql.png",
+      "rating":"3.5",
+      "syllabus":[
+        {
+          "content":"Introduction to Databases"
+        },
+        {
+          "content":"Database Management Systems (DBMS)"
+        },
+        {
+          "content":"Entity-Relationship (ER) Model"
+        },
+        {
+          "content":"Normalization"
+        },
+        {
+          "content":"Introduction to SQL"
+        },
+        {
+          "content":"Data Definition Language (DDL)"
+        },
+        {
+          "content":"Data Manipulation Language (DML)"
+        },
+        {
+          "content":"Basic Queries"
+        },
+        {
+          "content":"Joins and Relationships"
+        },
+        {
+          "content":"Subqueries and Derived Tables"
+        },
+        {
+          "content":"Aggregation and Grouping"
+        },
+        {
+          "content":"Data Modification Statements"
+        },
+        {
+          "content":"Views and Indexes"
+        },
+        {
+          "content":"Stored Procedures and Functions"
+        },
+        {
+          "content":"Triggers"
+        },
+        {
+          "content":"Transactions and Concurrency"
+        },
+        {
+          "content":"User Management and Permissions & Data security "
+        },
+        {
+          "content":"Performance Optimization"
+        },
+        {
+          "content":"Query Optimization"
+        },
+        {
+          "content":"Normalization vs. Denormalization"
+        }
+      ]
+    },
+    {
+      "coursename":"Fullstack",
+      "title":"Fullstack web development",
+      "courseheading":"Fullstack Web Development",
+      "coursecontent":"You acquire knowledge regarding Create and structure simple web pages using HTML, then use CSS to style them. Use JavaScript to create interactive, dynamic web sites",
+      "courseimage":"../../assets/fullstack.png",
+      "slideimage":"../../assets/syllabus-fullstack.png",
+      "mobileimage":"./assets/syllabus-fullstack.png",
+      "mobileslideimage":"./assets/mobile-slide-fullstack.svg",
+      "nextslideimage":"../../assets/slide-fullstack.png",
+      "rating":"4.5",
+      "syllabus":[
+        {
+          "content":"HTML and CSS"
+        },
+        {
+          "content":"JavaScript Fundamentals"
+        },
+        {
+          "content":"Front-End Frameworks (Angular, React)"
+        },
+        {
+          "content":"Web Performance"
+        },
+        {
+          "content":"Server-Side Programming (Node.js)"
+        },
+        {
+          "content":"Databases (MySQL, MongoDB)"
+        },
+        {
+          "content":"API Development"
+        },
+        {
+          "content":"Server Environments"
+        },
+        {
+          "content":"Web Application Architecture"
+        },
+        {
+          "content":"Testing"
+        },
+        {
+          "content":"Web hosting"
+        },
+        {
+          "content":"Real-time Applications"
+        },
+        {
+          "content":"Project Management"
+        }
+      ]
+    },
+    {
+      "coursename":"DEVOPS",
+      "title":"Devops",
+      "courseheading":"DEVOPS",
+      "coursecontent":"You gain knowledge of the fundamental traits of DevOps, such as creating a culture of shared accountability, openness, and acceptance of failure",
+      "courseimage":"../../assets/DEVOPS.png",
+      "slideimage":"../../assets/syllabus-devops.png",
+      "mobileimage":"./assets/syllabus-devops.png",
+      "mobileslideimage":"./assets/mobile-slide-devops.svg",
+      "nextslideimage":"../../assets/slide-devops.png",
+      "rating":"5.0",
+      "syllabus":[
+        {
+          "content":"Understanding DevOps"
+        },
+        {
+          "content":"DevOps Lifecycle"
+        },
+        {
+          "content":"Version Control Systems"
+        },
+        {
+          "content":"Collaboration Tools"
+        },
+        {
+          "content":"Infrastructure as Code (IaC)"
+        },
+        {
+          "content":"Introduction to IaC"
+        },
+        {
+          "content":"Configuration Management"
+        },
+        {
+          "content":"Cloud Computing"
+        },
+        {
+          "content":"Continuous Integration (CI)"
+        },
+        {
+          "content":"Continuous Delivery and Deployment (CD)"
+        },
+        {
+          "content":"CD Pipelines"
+        },
+        {
+          "content":"Deployment Strategies"
+        },
+        {
+          "content":"Containerization and Orchestration"
+        },
+        {
+          "content":"Docker"
+        },
+        {
+          "content":"Kubernetes"
+        },
+        {
+          "content":"Monitoring and Logging"
+        },
+        {
+          "content":"Application Monitoring"
+        },
+        {
+          "content":"Logging and Tracing"
+        },
+        {
+          "content":"Security and Compliance"
+        },
+        {
+          "content":"Security Best Practices"
+        },
+        {
+          "content":"Compliance and Auditing"
+        },
+        {
+          "content":"DevOps Automation, Infrastructure Automation, CI/CD Automation"
+        },
+        {
+          "content":"Advanced DevOps Concepts, Serverless Architecture, DevSecOps, GitOps, Multi-Cloud and Hybrid Environments"
+        }
+      ]
+    },
+    {
+      "coursename":"AZURE",
+      "title":"Azure",
+      "courseheading":"AZURE",
+      "coursecontent":"Microsoft's Azure, one of the most popular and in-demand Cloud Computing services, is covered in-depth in this Azure",
+      "courseimage":"../../assets/AZURE.png",
+      "slideimage":"../../assets/syllabus-azure.svg",
+      "mobileimage":"./assets/syllabus-azure.svg",
+      "mobileslideimage":"./assets/mobile-slide-azure.svg",
+      "nextslideimage":"../../assets/slide-azure.png",
+      "rating":"5.0",
+      "syllabus":[
+        {
+          "content":"Introduction to Microsoft Azure"
+        },
+        {
+          "content":"Cloud Computing Concepts"
+        },
+        {
+          "content":"Azure regions and availability zones"
+        },
+        {
+          "content":"Azure Portal and Navigation"
+        },
+        {
+          "content":"Azure Services Overview"
+        },
+        {
+          "content":"Compute Services"
+        },
+        {
+          "content":"Storage Services"
+        },
+        {
+          "content":"Networking Services"
+        },
+        {
+          "content":"Load balancers, Azure Firewall, and Network Security Groups"
+        }
+      ]
+    }
+  ]
+}

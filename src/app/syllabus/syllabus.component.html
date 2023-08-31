@@ -1,0 +1,91 @@
+<div class="syllabus-course">
+  <div class="course-slideshow">
+    <div class="main-slide">
+      <div><img src="{{slideimage}}" alt="" title=""></div>
+      <div class=""><button><b>Enroll Now</b></button></div>
+    </div>
+    <div class="next-slides">
+      <div class="slide-details">
+        <img src="{{nextslideimage}}" alt="">
+      </div>
+      <div id="{{'slide-details'+index}}" *ngFor="let item of parsedImage;let index=index">
+        <img src="{{item.nextslideimage}}" alt="" (click)="courseDetails(this.item.coursename)">
+      </div>
+    </div>
+  </div>
+  <div class="courseselection-contents">
+    <div class="courseselection-syllabus">
+  <div class="course-syllabus-heading">
+    <h1>{{coursenameSelected}} Course Syllabus</h1>
+  </div>
+  <div class="syllabus-container" *ngFor="let syllabus of parsedsyllabus;let index=index">
+    <li>{{syllabus.content}}</li>
+  </div>
+</div>
+<div class="course-rating">
+<div class="course-rating-contents">
+  <h2>Course Rating</h2>
+  <small>{{courseRating}}</small>
+  <div  class="star-icon">
+    <div *ngFor="let item of parsecourseRating;let index=index;">
+      <i class="fa-solid fa-star" style="color: #d4d71d;"></i>
+    </div>
+    <div>
+    <i class="fa-solid fa-star-half" style="color: #d4d71d;" *ngIf="starvisible"></i>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- mobile view -->
+
+<div class="mobile-syllabus-course">
+  <div class="mobile-syllabus-contents" *ngIf="!ispython">
+    <img src="{{mobileslideimages}}" alt="course">
+    <button>Enroll now</button>
+  </div>
+  <div class="mobile-syllabus-contents python-slides" *ngIf="ispython">
+    <div class="slides">
+      <div class="python-images" *ngFor="let images of mobileslideimagearray">
+        <img src="{{images}}" alt="course">
+      </div>
+    </div>
+    <div class="slides">
+      <div class="python-boxes" *ngFor="let images of mobileslideimagearray; let index=index">
+        <img src="{{images}}" alt="course"  (click)="pythonImageChange(index)">
+      </div>
+      <button>Enroll now</button>
+    </div>
+  </div>
+  <div class="mobile-syllabus-contents">
+    <div class="mobile-syllabus-contents-inner">
+      <div class="mobile-rating">
+        <div class="course-changing" *ngFor="let item of parsedmobileImage;let index=index">
+          <img src="{{item.mobileslideimage}}" alt="" (click)="mobilecourseDetails(this.item.coursename)">
+        </div>
+      </div>
+      <div class="mobile-rating">
+        <p>Course Rating</p>
+        <small>{{courseRating}}</small>
+        <div  class="star-icon">
+          <div *ngFor="let item of parsecourseRating;let index=index;">
+            <i class="fa-solid fa-star" style="color: #d4d71d;"></i>
+          </div>
+          <div>
+            <i class="fa-solid fa-star-half" style="color: #d4d71d;" *ngIf="starvisible"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-syllabus-contents-inner">
+      <li><b>SYLLABUS</b></li>
+    </div>
+    <div class="mobile-syllabus-contents-inner" *ngFor="let syllabus of parsedsyllabus;let index=index">
+      <li>{{syllabus.content}}</li>
+    </div>
+
+  </div>
+</div>
+
