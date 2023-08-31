@@ -219,6 +219,7 @@ height: 400px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-left: 5%;
   }
   .course-changing{
     width: 30%;

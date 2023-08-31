@@ -109,6 +109,9 @@
   display: flex;
   justify-content: center;
 }
+.mobile-course-details{
+  display: none;
+}
 
 @media screen and (max-width:500px) and (min-width:360px) {
   .course-heading{
@@ -117,8 +120,11 @@
   .courses{
     margin-bottom: 30%;
   }
-  .course-details{
+  .main-course-details{
     display: none;
+  }
+  .mobile-course-details{
+    display: block;
   }
   .courses-available{
     width: 40%;

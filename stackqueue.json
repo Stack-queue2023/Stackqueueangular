@@ -25,6 +25,7 @@
       "courseimage":"../../assets/python.png",
       "slideimage":"../../assets/syllabus-python.png",
       "mobileimage":["./assets/mobile-python-1.svg","./assets/mobile-python-2.svg","./assets/mobile-python-3.svg"],
+      "mobileslideimage":"./assets/mobile-slide-python.svg",
       "nextslideimage":"../../assets/slide-python.png",
       "syllabus":[
         {
@@ -101,6 +102,7 @@
       "slideimage":"../../assets/syllabus-flutter.png",
       "nextslideimage":"../../assets/slide-flutter.png",
       "mobileimage":"./assets/mobile-flutter.svg",
+      "mobileslideimage":"./assets/mobile-slide-flutter.svg",
       "syllabus":[
         {
           "content":""
@@ -124,6 +126,7 @@
       "courseimage":"../../assets/c.png",
       "slideimage":"../../assets/syllabus-c.png",
       "mobileimage":"./assets/syllabus-c.png",
+      "mobileslideimage":"./assets/mobile-slide-c.svg",
       "nextslideimage":"../../assets/slide-c.png"
     },
     {
@@ -134,6 +137,7 @@
       "courseimage":"../../assets/react.png",
       "slideimage":"../../assets/syllabus-react.png",
       "mobileimage":"./assets/syllabus-react.png",
+      "mobileslideimage":"./assets/mobile-slide-react.svg",
       "nextslideimage":"../../assets/slide-react.png",
       "syllabus":[
         {
@@ -200,6 +204,7 @@
       "courseimage":"../../assets/java.png",
       "slideimage":"../../assets/syllabus-java.png",
       "mobileimage":"./assets/syllabus-java.png",
+      "mobileslideimage":"./assets/mobile-slide-java.svg",
       "nextslideimage":"../../assets/slide-java.png",
       "syllabus":[
         {
@@ -272,6 +277,7 @@
       "courseimage":"../../assets/mongoDb.png",
       "slideimage":"../../assets/syllabus-mongodb.jpg",
       "mobileimage":"./assets/syllabus-mongodb.jpg",
+      "mobileslideimage":"./assets/mobile-slide-mongodb.svg",
       "nextslideimage":"../../assets/slide-mongodb.png"
     },
     {
@@ -282,6 +288,7 @@
       "courseimage":"../../assets/Angular.png",
       "slideimage":"../../assets/syllabus-angular.png",
       "mobileimage":"./assets/syllabus-angular.png",
+      "mobileslideimage":"./assets/mobile-slide-angular.svg",
       "nextslideimage":"../../assets/slide-angular.png"
     },
     {
@@ -290,8 +297,9 @@
       "courseheading":"AWS Services",
       "coursecontent":"Fundamentals in Python,Python with Data Science available",
       "courseimage":"../../assets/aws.png",
-      "slideimage":"../../assets/syllabus-aws.png",
-      "mobileimage":"./assets/syllabus-aws.png",
+      "slideimage":"../../assets/syllabus-AWS.png",
+      "mobileimage":"./assets/syllabus-AWS.png",
+      "mobileslideimage":"./assets/mobile-slide-aws.svg",
       "nextslideimage":"../../assets/slide-aws.png"
     },
     {
@@ -302,6 +310,7 @@
       "courseimage":"../../assets/sql.png",
       "slideimage":"../../assets/syllabus-sql.png",
       "mobileimage":"./assets/syllabus-sql.png",
+      "mobileslideimage":"./assets/mobile-slide-mysql.svg",
       "nextslideimage":"../../assets/slide-sql.png",
       "syllabus":[
         {
@@ -374,6 +383,7 @@
       "courseimage":"../../assets/fullstack.png",
       "slideimage":"../../assets/syllabus-fullstack.png",
       "mobileimage":"./assets/syllabus-fullstack.png",
+      "mobileslideimage":"./assets/mobile-slide-fullstack.svg",
       "nextslideimage":"../../assets/slide-fullstack.png",
       "syllabus":[
         {
@@ -402,6 +412,7 @@
       "courseimage":"../../assets/DEVOPS.png",
       "slideimage":"../../assets/syllabus-devops.png",
       "mobileimage":"./assets/syllabus-devops.png",
+      "mobileslideimage":"./assets/mobile-slide-devops.svg",
       "nextslideimage":"../../assets/slide-devops.png",
       "syllabus":[
         {
