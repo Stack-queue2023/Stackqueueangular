@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { FormBuilder,Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-
+import {AngularFirestore} from '@angular/fire/compat/firestore';
+// import { collection,collectionData,Firestore,getDocs } from "@angular/fire/firestore";
+// import { query } from 'firebase/firestore';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -9,7 +11,21 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
 
-  constructor(private route:Router,private form:FormBuilder){}
+  constructor(private route:Router,private form:FormBuilder, private firestore: AngularFirestore){
+  //   const collectioninstance=query(collection(this.firestore, 'userregistration')) ;
+  //   getDocs(collectioninstance).then((querySnapshot) => {
+  //   querySnapshot.forEach((doc) => {
+  //     console.log( doc.data());
+  //   });
+  // })
+  // .catch((error) => {
+  //   console.error('Error getting documents: ', error);
+  // });
+
+  this.firestore.collection('userregistration').valueChanges().subscribe(x=>{
+    console.log(x);
+  })
+  }
 
   homepage(){
     this.route.navigateByUrl('').then(()=>{
