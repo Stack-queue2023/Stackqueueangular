@@ -21,7 +21,11 @@ export class CoursesComponent {
   sendCourseDetails:any;
   courseSyllabus:any;
   checkCount:any=0;
+<<<<<<< HEAD
   mobileslideimages:any=[];
+=======
+  courseReview:any;
+>>>>>>> 15269fc4d0e27a6f74275ef0954fe218e20d65b5
 
   constructor(private _http:HttpClient,private route:Router){
     this._http.get<any>("http://localhost:3000/courses").subscribe((coursedetails)=>{
@@ -40,6 +44,7 @@ export class CoursesComponent {
       this.courseSelection=courseselection;
       const course=courseselection.find((coursefind:any)=>{
         this.courseFind=coursefind;
+        this.courseReview=coursefind.rating;
         this.courseSyllabus=coursefind.syllabus;
         this.courseName=coursefind.coursename;
         return coursename===coursefind.coursename;
@@ -62,6 +67,11 @@ export class CoursesComponent {
             }
           this.j++;
         }
+<<<<<<< HEAD
+=======
+        console.log(this.courseSyllabus);
+        sessionStorage.setItem('courserating',this.courseReview);
+>>>>>>> 15269fc4d0e27a6f74275ef0954fe218e20d65b5
         sessionStorage.setItem('coursessyllabusdetails',JSON.stringify(this.courseSyllabus));
         sessionStorage.setItem('coursename',this.courseName);
         sessionStorage.setItem('nextcoursedetails',JSON.stringify(this.nextCoursesSlide));

@@ -1,0 +1,130 @@
+header{
+  padding: 5px 20px;
+  box-shadow: 1px 2px 2px 1.5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0px;
+  background-color: white;
+}
+.nav-bar{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-bar-boxes img{
+  width: 200px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.nav-bar-boxes button{
+  padding: 10px 25px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.1vw;
+}
+.nav-bar-boxes button:hover{
+  background-color: black;
+  color: white;
+  box-shadow: 1.5px 2px 2.5px 1.5px rgba(0, 0, 0, 1);
+}
+.nav-bar-boxes a{
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 1.3vw;
+  color: black;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.nav-bar-boxes a:hover{
+  background-color: #f0f2f3;
+  border-radius: 10px;
+}
+.logo-form{
+  display: flex;
+  flex-direction: column;
+}
+.image img{
+  width: 300px;
+  height: 150px;
+}
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #faeaff;
+  margin: 0 2rem 2rem 2rem;
+}
+.form-container .flex{
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2.5rem;
+}
+.form-container-formset{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.form-container-formset .form-content{
+  width: 100%;
+  padding: 0.7rem;
+}
+.form-container-formset input::placeholder{
+  font-size: 1rem;
+}
+.form-container-formset input:focus{
+border: none;
+}
+.input-file input::before{
+content: 'Insert Student Photography';
+position: absolute;
+align-content: center;
+background-color: #65Baa9;
+padding: 0.5rem 2.6rem 0.5rem 2.6rem;
+font-size: 1rem;
+}
+.form-container-formset button{
+  width: 100%;
+  padding: 0.7rem 0 0.7rem 0;
+  background-color: black;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.form-container-formseparate{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+small{
+  color: red;
+  font-size:1rem;
+  display: flex;
+  justify-content: center;
+}
+.input-group input{
+outline: 1px solid #666;
+font-size: 1rem;
+}
+.input-group select{
+  outline: 1px solid #666;
+  font-size: 1rem;
+  }
+.input-group{
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.input-group label{
+  font-size: 1.1rem;
+}
+

@@ -24,6 +24,8 @@ export class SyllabusComponent {
   courseSyllabus:any;
   parsedsyllabus:any;
   storesyllabus:any;
+  courseRating:any;
+  splitcourseRating:any;
   coursenameSelected:any;
   mobileslideimages:any;
   mobileimage:any;
@@ -31,8 +33,19 @@ export class SyllabusComponent {
   getmobileslideimage:any;
   ispython:boolean=false;
   parsedmobileImage:any=[];
+  parsecourseRating:any;
+  starvisible:boolean=false;
+
   constructor(private _http:HttpClient){
     this.courseLengthCount=1;
+    this.courseRating=sessionStorage.getItem('courserating');
+    this.splitcourseRating=this.courseRating.split('.');
+    this.parsecourseRating=new Array(parseInt(this.courseRating));
+    if(parseInt(this.splitcourseRating[1])>0){
+      this.parsecourseRating=new Array(parseInt(this.courseRating));
+      this.starvisible=true;
+    }
+
     this.coursenameSelected=sessionStorage.getItem('coursename');
     this.courseSyllabus=sessionStorage.getItem('coursessyllabusdetails');
     this.parsedsyllabus=JSON.parse(this.courseSyllabus);
@@ -61,6 +74,9 @@ export class SyllabusComponent {
       const course=courseDetails.find((course:any)=>{
         this.storeCourseLength=this.courseLengthCount++;
         this.courseFind=course;
+        this.courseRating=course.rating;
+        this.splitcourseRating=this.courseRating.split('.');
+        this.parsecourseRating=parseInt(course.rating);
         this.coursenameSelected=course.coursename;
         this.parsedsyllabus=course.syllabus;
         this.courseSelection=courseDetails;
@@ -69,7 +85,17 @@ export class SyllabusComponent {
         return coursename===course.coursename;
       });
       if(course){
+        console.log(this.courseRating);
         this.j=1;
+        if(parseInt(this.splitcourseRating[1])>0){
+          this.parsecourseRating=new Array(parseInt(this.courseRating));
+          console.log(this.splitcourseRating);
+          this.starvisible=true;
+        }
+        else{
+          this.starvisible=false;
+          this.parsecourseRating=new Array(parseInt(this.courseRating));
+        }
         for(this.i=0;this.i<2;this.i++){
           if(this.courseSelection[(this.storeCourseLength-1)+this.j]){
           this.checkCount++;

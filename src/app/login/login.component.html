@@ -176,7 +176,7 @@
             <p class="para">Please enter your details</p>
           </div>
           </div>
-          <form [formGroup]="loginvalidation">
+          <form [formGroup]="loginvalidation" (ngSubmit)="loginvalidation.valid && userLoginDetails()">
             <div class="form-input-control">
               <label for=""><b>Email</b></label>
               <input type="email" placeholder="Email ID" formControlName="Email">
@@ -195,13 +195,10 @@
             <div class="form-input-control">
               <button>LOGIN</button>
             </div>
-
             <div class="register-navigate">
               <h3>don't have an account ? <a routerLink="/register">Register</a></h3>
             </div>
-
           </form>
-
         </div>
       </div>
     </div>

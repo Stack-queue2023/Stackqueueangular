@@ -7,6 +7,9 @@ import { RegisterComponent } from './register/register.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { SyllabusComponent } from './syllabus/syllabus.component';
+import { AdmissionformComponent } from './admissionform/admissionform.component';
+import { useractiveGuard } from './useractive.guard';
+
 
 const routes: Routes = [
   {
@@ -47,7 +50,12 @@ const routes: Routes = [
   },
   {
   path:"coursesyllabus",
-  component:SyllabusComponent
+  component:SyllabusComponent,
+  canActivate:[useractiveGuard]
+  },
+  {
+    path:"admissionform",
+    component:AdmissionformComponent
   }
 ];
 

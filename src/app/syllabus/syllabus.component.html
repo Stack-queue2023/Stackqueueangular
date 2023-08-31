@@ -13,12 +13,30 @@
       </div>
     </div>
   </div>
+  <div class="courseselection-contents">
+    <div class="courseselection-syllabus">
   <div class="course-syllabus-heading">
     <h1>{{coursenameSelected}} Course Syllabus</h1>
   </div>
   <div class="syllabus-container" *ngFor="let syllabus of parsedsyllabus;let index=index">
     <li>{{syllabus.content}}</li>
   </div>
+</div>
+<div class="course-rating">
+<div class="course-rating-contents">
+  <h2>Course Rating</h2>
+  <small>{{courseRating}}</small>
+  <div  class="star-icon">
+    <div *ngFor="let item of parsecourseRating;let index=index;">
+      <i class="fa-solid fa-star" style="color: #d4d71d;"></i>
+    </div>
+    <div>
+    <i class="fa-solid fa-star-half" style="color: #d4d71d;" *ngIf="starvisible"></i>
+  </div>
+  </div>
+</div>
+</div>
+</div>
 </div>
 
 <!-- mobile view -->
