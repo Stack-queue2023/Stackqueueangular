@@ -21,6 +21,7 @@ export class CoursesComponent {
   sendCourseDetails:any;
   courseSyllabus:any;
   checkCount:any=0;
+  courseReview:any;
 
   constructor(private _http:HttpClient,private route:Router){
     this._http.get<any>("http://localhost:3000/courses").subscribe((coursedetails)=>{
@@ -40,6 +41,7 @@ export class CoursesComponent {
       this.courseSelection=courseselection;
       const course=courseselection.find((coursefind:any)=>{
         this.courseFind=coursefind;
+        this.courseReview=coursefind.rating;
         this.courseSyllabus=coursefind.syllabus;
         console.log(coursefind.syllabus);
         this.courseName=coursefind.coursename;
@@ -68,6 +70,7 @@ export class CoursesComponent {
           this.j++;
         }
         console.log(this.courseSyllabus);
+        sessionStorage.setItem('courserating',this.courseReview);
         sessionStorage.setItem('coursessyllabusdetails',JSON.stringify(this.courseSyllabus));
         sessionStorage.setItem('coursename',this.courseName);
         sessionStorage.setItem('nextcoursedetails',JSON.stringify(this.nextCoursesSlide));

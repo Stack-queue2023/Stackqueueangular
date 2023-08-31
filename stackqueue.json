@@ -21,10 +21,11 @@
       "coursename":"Python",
       "title":"Python image",
       "courseheading":"Python course",
-      "coursecontent":"Fundamentals in Python,Python with Data Science available",
+      "coursecontent":"Python, the most effective, adaptable, and in-demand programming language right now, is covered in its fundamentals. Starting from start, work your way up to writing programs to collect, clean, analyze, and visualize data",
       "courseimage":"../../assets/python.png",
       "slideimage":"../../assets/syllabus-python.png",
       "nextslideimage":"../../assets/slide-python.png",
+      "rating":"5.0",
       "syllabus":[
         {
           "content":"Introduction to Python"
@@ -95,22 +96,53 @@
       "coursename":"Flutter",
       "title":"Flutter image",
       "courseheading":"Flutter course",
-      "coursecontent":"Fundamentals in Python,Python with Data Science available",
+      "coursecontent":"You acquire the skills and knowledge necessary to construct visually appealing, high-performing mobile apps for both iOS and Android by enrolling in our Flutter app development course. ",
       "courseimage":"../../assets/flutter.png",
       "slideimage":"../../assets/syllabus-flutter.png",
       "nextslideimage":"../../assets/slide-flutter.png",
+      "rating":"4.0",
       "syllabus":[
         {
-          "content":""
+          "content":"Introduction to Flutter"
         },
         {
-          "content":""
+          "content":"Flutter & Dart Basics I- Getting a Solid Foundation [ROLLDICE APP]"
         },
         {
-          "content":""
+          "content":"Flutter & Dart Basics II - Fundamentals Deep Dive [QUIZ APP]"
         },
         {
-          "content":""
+          "content":"Debugging Flutter Adding Interactivity, More Widgets & Theming [EXPENSE TRACKER APP]"
+        },
+        {
+          "content":"Building Responsive & Adaptive User Interfaces [EXPENSE TRACKER APP]"
+        },
+        {
+          "content":"Flutter & Dart Internals [TODO APP]"
+        },
+        {
+          "content":"Building Multi-Screen Apps & Navigating Between Screens [MEALS APP]"
+        },
+        {
+          "content":"Managing App-wide State [MEALS APP]"
+        },
+        {
+          "content":"Handling User Input & Working with Forms [SHOPPING LIST APP]"
+        },
+        {
+          "content":"Connecting a Backend & Sending HTTP Requests [SHOPPING LIST APP]"
+        },
+        {
+          "content":"Using Native Device Features (e.g., Camera) [FAVORITE PLACES APP]"
+        },
+        {
+          "content":"Push Notifications & More: Building a Chat App with Flutter & Firebase"
+        },
+        {
+          "content":"About The Course Update"
+        },
+        {
+          "content":"Next Steps & Roundup"
         }
       ]
     },
@@ -118,19 +150,80 @@
       "coursename":"C language",
       "title":"C image",
       "courseheading":"C course",
-      "coursecontent":"C is a general-purpose computer programming language. Fundamentals in C will be covered",
+      "coursecontent":"Learn to write strong and efficient code in C with this beginner-friendly certification course in C Programming",
       "courseimage":"../../assets/c.png",
       "slideimage":"../../assets/syllabus-c.png",
-      "nextslideimage":"../../assets/slide-c.png"
+      "nextslideimage":"../../assets/slide-c.png",
+      "rating":"3.5",
+      "syllabus":[
+        {
+          "content":"Introduction to C Programming"
+        },
+        {
+          "content":" Basic Concepts"
+        },
+        {
+          "content":"Keywords"
+        },
+        {
+          "content":"Variables"
+        },
+        {
+          "content":"Data Types"
+        },
+        {
+          "content":"Operators and Expressions"
+        },
+        {
+          "content":"Input-Output Library Functions"
+        },
+        {
+          "content":"Control statements"
+        },
+        {
+          "content":"Pointer"
+        },
+        {
+          "content":"Pointer and Function"
+        },
+        {
+          "content":"Array"
+        },
+        {
+          "content":"Pointer and Array"
+        },
+        {
+          "content":"Array and Function"
+        },
+        {
+          "content":"Dynamic memory allocation"
+        },
+        {
+          "content":"Strings"
+        },
+        {
+          "content":"Structure"
+        },
+        {
+          "content":"Structure and Function"
+        },
+        {
+          "content":"Union and Enumeration and typedef"
+        },
+        {
+          "content":"File Handling"
+        }
+      ]
     },
     {
       "coursename":"React",
       "title":"React image",
       "courseheading":"Reactjs course",
-      "coursecontent":"Fundamentals in Python,Python with Data Science available",
+      "coursecontent":"Learn the fundamentals of contemporary web development. You will learn ReactJS from scratch and get a solid understanding of its fundamental ideas with the help of the in-depth course modules.",
       "courseimage":"../../assets/react.png",
       "slideimage":"../../assets/syllabus-react.png",
       "nextslideimage":"../../assets/slide-react.png",
+      "rating":"4.5",
       "syllabus":[
         {
           "content":"Introduction to React"
@@ -192,10 +285,11 @@
       "coursename":"JAVA",
       "title":"JAVA image",
       "courseheading":"JAVA core",
-      "coursecontent":"Fundamentals in Python,Python with Data Science available",
+      "coursecontent":"With the help of this Java online/offline course, you may learn the principles of Java programming and become a great coder.-",
       "courseimage":"../../assets/java.png",
       "slideimage":"../../assets/syllabus-java.png",
       "nextslideimage":"../../assets/slide-java.png",
+      "rating":"4.0",
       "syllabus":[
         {
           "content":"Intro to Java Platform & Language"
@@ -263,37 +357,152 @@
       "coursename":"MongoDB",
       "title":"MongoDB image",
       "courseheading":"MongoDB course",
-      "coursecontent":"Fundamentals in Python,Python with Data Science available",
+      "coursecontent":"NoSQL database management solution with the greatest adoption: Learn how to use MongoDB and use it into a variety of practical software applications.",
       "courseimage":"../../assets/mongoDb.png",
       "slideimage":"../../assets/syllabus-mongodb.jpg",
-      "nextslideimage":"../../assets/slide-mongodb.png"
+      "nextslideimage":"../../assets/slide-mongodb.png",
+      "rating":"3.5",
+      "syllabus":[
+        {
+          "content":"Introduction to MongoDB"
+        },
+        {
+          "content":"Basic CRUD Operations"
+        },
+        {
+          "content":"Data Modeling"
+        },
+        {
+          "content":"Indexing and Aggregation"
+        },
+        {
+          "content":"Advanced Queries"
+        },
+        {
+          "content":"Data Manipulation"
+        },
+        {
+          "content":"Data Administration"
+        },
+        {
+          "content":"Transactions and Concurrency"
+        },
+        {
+          "content":"Full-text Search and Text Indexes"
+        },
+        {
+          "content":"Data Modeling Best Practices"
+        },
+        {
+          "content":"Integration with Programming Languages"
+        },
+        {
+          "content":"MongoDB tools"
+        },
+        {
+          "content":"MongoDB Cloud"
+        },
+        {
+          "content":"CRUD Documents"
+        }
+      ]
     },
     {
       "coursename":"Angular",
       "title":"Angular Framework",
       "courseheading":"Angular Framework",
-      "coursecontent":"Fundamentals in Python,Python with Data Science available",
+      "coursecontent":"This Angular course for beginners will provide you all the skills needed to create intricate and highly responsive single-page applications",
       "courseimage":"../../assets/Angular.png",
       "slideimage":"../../assets/syllabus-angular.png",
-      "nextslideimage":"../../assets/slide-angular.png"
+      "nextslideimage":"../../assets/slide-angular.png",
+      "rating":"4.5",
+      "syllabus":[
+        {
+          "content":"Introduction to Angular"
+        },
+        {
+          "content":"Introduction to Typescript"
+        },
+        {
+          "content":"Typescript Data Types and Functions"
+        },
+        {
+          "content":"Classes and Interface"
+        },
+        {
+          "content":"Typescript decorators and tsconfig file"
+        },
+        {
+          "content":"Built-in Directives"
+        },
+        {
+          "content":"Built-in Pipes"
+        },
+        {
+          "content":"Angular Installation and Binding Syntax"
+        },
+        {
+          "content":"Lifecycle Hook and Component Communication"
+        },
+        {
+          "content":"Dependency Injection"
+        },
+        {
+          "content":"HttpClient and RxJs"
+        },
+        {
+          "content":"Angular Guards"
+        },
+        {
+          "content":"observables and promise"
+        }
+      ]
     },
     {
       "coursename":"AWS",
       "title":"AWS services",
       "courseheading":"AWS Services",
-      "coursecontent":"Fundamentals in Python,Python with Data Science available",
+      "coursecontent":"With an introduction curriculum centered on AWS cloud computing solutions, you may increase your IT skill set",
       "courseimage":"../../assets/aws.png",
       "slideimage":"../../assets/syllabus-aws.png",
-      "nextslideimage":"../../assets/slide-aws.png"
+      "nextslideimage":"../../assets/slide-aws.png",
+      "rating":"5.0",
+      "syllabus":[
+        {
+          "content":"Introduction to AWS"
+        },
+        {
+          "content":"Basic account setup "
+        },
+        {
+          "content":"exploring tools on AWS Site"
+        },
+        {
+          "content":"AWS console"
+        },
+        {
+          "content":"region"
+        },
+        {
+          "content":"EC2 instances"
+        },
+        {
+          "content":"IAM roles "
+        },
+        {
+          "content":"S3 buckets"
+        }
+      ]
     },
     {
       "coursename":"MySQL",
       "title":"MySQL Database",
       "courseheading":"MySQL Database",
-      "coursecontent":"Fundamentals in Python,Python with Data Science available",
+      "coursecontent":"The ability to write SQL queries ,Utilize complex SQL techniques like views, transactions, stored procedures, and joins to create queries with greater strength. ",
       "courseimage":"../../assets/sql.png",
       "slideimage":"../../assets/syllabus-sql.png",
       "nextslideimage":"../../assets/slide-sql.png",
+      "rating":"3.5",
       "syllabus":[
         {
           "content":"Introduction to Databases"
@@ -361,26 +570,50 @@
       "coursename":"Fullstack",
       "title":"Fullstack web development",
       "courseheading":"Fullstack Web Development",
-      "coursecontent":"Fundamentals in Python,Python with Data Science available",
+      "coursecontent":"You acquire knowledge regarding Create and structure simple web pages using HTML, then use CSS to style them. Use JavaScript to create interactive, dynamic web sites",
       "courseimage":"../../assets/fullstack.png",
       "slideimage":"../../assets/syllabus-fullstack.png",
       "nextslideimage":"../../assets/slide-fullstack.png",
+      "rating":"4.5",
       "syllabus":[
         {
-          "content":"HTML and CSS",
-          "content1":"JavaScript Fundamentals",
-          "content3":"Front-End Frameworks (Angular)",
-          "content4":"Web Performance",
-          "content5":"Back-End Development",
-          "content6":"Server-Side Programming",
-          "content7":"Databases (MySQL,MongoDB)",
-          "content8":"Server Environments",
-          "content9":"API Development",
-          "content10":"Web Application Architecture",
-          "content11":"Express js",
-          "content12":"Node js",
-          "content13":"Real-time projects",
-          "content14":"Project Management"
+          "content":"HTML and CSS"
+        },
+        {
+          "content":"JavaScript Fundamentals"
+        },
+        {
+          "content":"Front-End Frameworks (Angular, React)"
+        },
+        {
+          "content":"Web Performance"
+        },
+        {
+          "content":"Server-Side Programming (Node.js)"
+        },
+        {
+          "content":"Databases (MySQL, MongoDB)"
+        },
+        {
+          "content":"API Development"
+        },
+        {
+          "content":"Server Environments"
+        },
+        {
+          "content":"Web Application Architecture"
+        },
+        {
+          "content":"Testing"
+        },
+        {
+          "content":"Web hosting"
+        },
+        {
+          "content":"Real-time Applications"
+        },
+        {
+          "content":"Project Management"
         }
       ]
     },
@@ -388,10 +621,11 @@
       "coursename":"DEVOPS",
       "title":"Devops",
       "courseheading":"DEVOPS",
-      "coursecontent":"Fundamentals in Python,Python with Data Science available",
+      "coursecontent":"You gain knowledge of the fundamental traits of DevOps, such as creating a culture of shared accountability, openness, and acceptance of failure",
       "courseimage":"../../assets/DEVOPS.png",
       "slideimage":"../../assets/syllabus-devops.png",
       "nextslideimage":"../../assets/slide-devops.png",
+      "rating":"5.0",
       "syllabus":[
         {
           "content":"Understanding DevOps"
@@ -461,6 +695,45 @@
         },
         {
           "content":"Advanced DevOps Concepts, Serverless Architecture, DevSecOps, GitOps, Multi-Cloud and Hybrid Environments"
+        }
+      ]
+    },
+    {
+      "coursename":"AZURE",
+      "title":"Azure",
+      "courseheading":"AZURE",
+      "coursecontent":"Microsoft's Azure, one of the most popular and in-demand Cloud Computing services, is covered in-depth in this Azure",
+      "courseimage":"../../assets/AZURE.png",
+      "slideimage":"../../assets/syllabus-azure.svg",
+      "nextslideimage":"../../assets/slide-azure.png",
+      "rating":"5.0",
+      "syllabus":[
+        {
+          "content":"Introduction to Microsoft Azure"
+        },
+        {
+          "content":"Cloud Computing Concepts"
+        },
+        {
+          "content":"Azure regions and availability zones"
+        },
+        {
+          "content":"Azure Portal and Navigation"
+        },
+        {
+          "content":"Azure Services Overview"
+        },
+        {
+          "content":"Compute Services"
+        },
+        {
+          "content":"Storage Services"
+        },
+        {
+          "content":"Networking Services"
+        },
+        {
+          "content":"Load balancers, Azure Firewall, and Network Security Groups"
         }
       ]
     }

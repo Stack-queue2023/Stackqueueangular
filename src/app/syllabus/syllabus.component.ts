@@ -24,19 +24,30 @@ export class SyllabusComponent {
   courseSyllabus:any;
   parsedsyllabus:any;
   storesyllabus:any;
+  courseRating:any;
+  splitcourseRating:any;
   coursenameSelected:any;
+  parsecourseRating:any;
+  starvisible:boolean=false;
+
   constructor(private _http:HttpClient){
     this.courseLengthCount=1;
+    this.courseRating=sessionStorage.getItem('courserating');
+    this.splitcourseRating=this.courseRating.split('.');
+    this.parsecourseRating=new Array(parseInt(this.courseRating));
+    if(parseInt(this.splitcourseRating[1])>0){
+      this.parsecourseRating=new Array(parseInt(this.courseRating));
+      this.starvisible=true;
+    }
+
     this.coursenameSelected=sessionStorage.getItem('coursename');
     this.courseSyllabus=sessionStorage.getItem('coursessyllabusdetails');
     this.parsedsyllabus=JSON.parse(this.courseSyllabus);
     this.storesyllabus=this.parsedsyllabus[0];
-    console.log(this.storesyllabus.content0);
     this.slideimage=sessionStorage.getItem('slideimg');
     this.nextslideimage=sessionStorage.getItem('nextslideimage');
     this.parseslideimage=sessionStorage.getItem('nextcoursedetails');
     this.parsedImage=JSON.parse(this.parseslideimage);
-    console.log(this.parsedImage);
   }
 
 
@@ -45,8 +56,10 @@ export class SyllabusComponent {
       this.checkCount=0;
       const course=courseDetails.find((course:any)=>{
         this.storeCourseLength=this.courseLengthCount++;
-        console.log(course.syllabus);
         this.courseFind=course;
+        this.courseRating=course.rating;
+        this.splitcourseRating=this.courseRating.split('.');
+        this.parsecourseRating=parseInt(course.rating);
         this.coursenameSelected=course.coursename;
         this.parsedsyllabus=course.syllabus;
         this.courseSelection=courseDetails;
@@ -55,8 +68,17 @@ export class SyllabusComponent {
         return coursename===course.coursename;
       });
       if(course){
-        console.log(this.storeCourseLength);
+        console.log(this.courseRating);
         this.j=1;
+        if(parseInt(this.splitcourseRating[1])>0){
+          this.parsecourseRating=new Array(parseInt(this.courseRating));
+          console.log(this.splitcourseRating);
+          this.starvisible=true;
+        }
+        else{
+          this.starvisible=false;
+          this.parsecourseRating=new Array(parseInt(this.courseRating));
+        }
         for(this.i=0;this.i<2;this.i++){
           console.log(this.courseSelection[(this.storeCourseLength-1)+this.j]);
           if(this.courseSelection[(this.storeCourseLength-1)+this.j]){

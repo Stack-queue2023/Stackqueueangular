@@ -99,6 +99,9 @@
     transform: scaleY(1);
   }
 }
+.details-button p{
+  text-align: justify;
+}
 .course-heading-name{
   font-size: 1.8rem;
   display: flex;
