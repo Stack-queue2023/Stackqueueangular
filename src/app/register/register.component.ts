@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import {FormBuilder,Validators} from '@angular/forms'
+import {FormBuilder,Validators} from '@angular/forms';
+import {Firestore,addDoc,collection,collectionData} from '@angular/fire/firestore'
+
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -8,7 +10,12 @@ import {FormBuilder,Validators} from '@angular/forms'
 })
 export class RegisterComponent {
 
-  constructor(private route:Router,private form:FormBuilder){}
+  constructor(private route:Router,private form:FormBuilder,private firestore:Firestore){
+    const collectiondata=collection(this.firestore,'userregistration');
+    collectionData(collectiondata).subscribe((x)=>{
+      console.log(x);
+    })
+  }
   homepage(){
     this.route.navigateByUrl('').then(()=>{
       window.location.reload();
@@ -25,7 +32,14 @@ export class RegisterComponent {
 
   registerFormSubmit(){
     if(this.registerform.controls['password'].value == this.registerform.controls['confirmpassword'].value){
+      alert("form submitted");
       console.log(this.registerform.value);
+      const collectiondata=collection(this.firestore,'userregistration');
+      addDoc(collectiondata,this.registerform.value).then((res)=>{
+        console.log(res);
+      }).catch((error)=>{
+        console.log(error);
+      });
       this.registerform.reset();
     }
     else{

@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-syllabus',
@@ -30,7 +31,7 @@ export class SyllabusComponent {
   parsecourseRating:any;
   starvisible:boolean=false;
 
-  constructor(private _http:HttpClient){
+  constructor(private _http:HttpClient,private route:Router){
     this.courseLengthCount=1;
     this.courseRating=sessionStorage.getItem('courserating');
     this.splitcourseRating=this.courseRating.split('.');
@@ -108,5 +109,9 @@ export class SyllabusComponent {
       }
 
     })
+  }
+
+  enrollNow(){
+    this.route.navigateByUrl('admissionform');
   }
 }

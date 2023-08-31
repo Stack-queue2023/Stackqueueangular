@@ -38,8 +38,7 @@ const routes: Routes = [
   },
   {
   path:"coursesyllabus",
-  component:SyllabusComponent,
-  canActivate:[useractiveGuard]
+  component:SyllabusComponent
   },
   {
     path:"admissionform",

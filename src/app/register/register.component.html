@@ -15,7 +15,7 @@
             <p class="para">Please enter your details</p>
           </div>
           </div>
-          <form [formGroup]="registerform" (ngSubmit)="registerFormSubmit()">
+          <form [formGroup]="registerform" (ngSubmit)="registerform.valid && registerFormSubmit()">
             <div class="form-input-control">
               <label for=""><b>Name</b></label>
               <input type="text" placeholder="Username" formControlName="username">

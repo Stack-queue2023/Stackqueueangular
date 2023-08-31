@@ -5,6 +5,11 @@ header{
   top: 0px;
   background-color: white;
 }
+.image a img{
+  width: 250px;
+  height: 100px;
+  cursor: pointer;
+}
 .nav-bar{
   display: flex;
   flex-wrap: wrap;
@@ -66,6 +71,7 @@ header{
   display: flex;
   flex-direction: row;
   gap: 2rem;
+
   padding: 2.5rem;
 }
 .form-container-formset{
@@ -77,8 +83,12 @@ header{
 .form-container-formset .form-content{
   width: 100%;
   padding: 0.7rem;
+  resize: none;
 }
 .form-container-formset input::placeholder{
+  font-size: 1rem;
+}
+.form-container-formset textarea::placeholder{
   font-size: 1rem;
 }
 .form-container-formset input:focus{
@@ -114,7 +124,12 @@ small{
 .input-group input{
 outline: 1px solid #666;
 font-size: 1rem;
+width: 100%;
 }
+.input-group select{
+  outline: 1px solid #666;
+  font-size: 1rem;
+  }
 .input-group select{
   outline: 1px solid #666;
   font-size: 1rem;
@@ -127,4 +142,6 @@ font-size: 1rem;
 .input-group label{
   font-size: 1.1rem;
 }
-
+.form-container span{
+  color: red;
+}

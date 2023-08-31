@@ -14,7 +14,10 @@ import { RegisterComponent } from './register/register.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import { ContactusComponent } from './contactus/contactus.component';
 import { SyllabusComponent } from './syllabus/syllabus.component';
-import { AdmissionformComponent } from './admissionform/admissionform.component'
+import { AdmissionformComponent } from './admissionform/admissionform.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,9 @@ import { AdmissionformComponent } from './admissionform/admissionform.component'
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFirestore(() => getFirestore())
   ],
   providers: [],
   bootstrap: [AppComponent]

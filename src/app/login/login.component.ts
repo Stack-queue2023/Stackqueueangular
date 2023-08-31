@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder,Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import {Firestore,collection,addDoc,collectionData} from '@angular/fire/firestore'
 
 @Component({
   selector: 'app-login',
@@ -8,7 +9,15 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  constructor(private route:Router,private form:FormBuilder){}
+
+  collectioninstance:any;
+  constructor(private route:Router,private form:FormBuilder,private firestore:Firestore){
+    this.collectioninstance=collection(this.firestore,'userregistration');
+    console.log(this.collectioninstance);
+    collectionData(this.collectioninstance).subscribe((x)=>{
+      console.log(x);
+    })
+  }
 
   homepage(){
     this.route.navigateByUrl('').then(()=>{

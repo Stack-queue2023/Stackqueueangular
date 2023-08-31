@@ -1,6 +1,8 @@
 import { formatDate } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-admissionform',
@@ -16,7 +18,11 @@ export class AdmissionformComponent {
   getJoinedTime:any;
   joinedFormatDate:any;
   expiryDate:any="";
-  constructor(private formsbuilder:FormBuilder){}
+  constructor(private formsbuilder:FormBuilder,private route:Router,private _http:HttpClient){
+    this._http.get<any>("http://localhost:3000/courses").subscribe((courses)=>{
+      console.log(courses);
+    })
+  }
 
   //get Admission Details
   AdmissionDetails=this.formsbuilder.group({
@@ -26,11 +32,19 @@ export class AdmissionformComponent {
     Studentemail:['',[Validators.required,Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,5}$")]],
     Studentjoined:['',Validators.required],
     paymentmode:['',Validators.required],
+    Courseduration:['',Validators.required],
+    coursefee:['',Validators.required],
     duedate:['2023-08-18',Validators.required]
   });
 
   getAdmissionDetails(){
 
+  }
+
+  homepage(){
+    this.route.navigateByUrl('').then(()=>{
+      window.location.reload();
+    });
   }
 
   dateJoined(joined:any){
