@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-syllabus',
@@ -36,7 +37,7 @@ export class SyllabusComponent {
   parsecourseRating:any;
   starvisible:boolean=false;
 
-  constructor(private _http:HttpClient){
+  constructor(private _http:HttpClient,private route:Router){
     this.courseLengthCount=1;
     this.courseRating=sessionStorage.getItem('courserating');
     this.splitcourseRating=this.courseRating.split('.');
@@ -121,6 +122,7 @@ export class SyllabusComponent {
     })
   }
 
+<<<<<<< HEAD
   mobilecourseDetails(coursename:any){
     this._http.get<any>("http://localhost:3000/courses").subscribe((courseDetails)=>{
       this.checkCount=0;
@@ -193,5 +195,9 @@ export class SyllabusComponent {
       this.mobileslideimagearray[index]=this.mobileslideimagearray[1];
       this.mobileslideimagearray[1]=temp;
     }
+=======
+  enrollNow(){
+    this.route.navigateByUrl('admissionform');
+>>>>>>> c121874c44901ee0cc6e03b38e18e7ed3338b237
   }
 }

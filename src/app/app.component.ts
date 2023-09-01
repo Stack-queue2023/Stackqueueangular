@@ -23,6 +23,10 @@ export class AppComponent implements OnInit {
           this.navbartoggle=false;
           this.footertoggle=false;
         }
+        if(value.url=='/admissionform'){
+          this.navbartoggle=false;
+          this.footertoggle=false;
+        }
       }
     })
   }

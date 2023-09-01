@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormBuilder,Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import {Firestore, collection, collectionData} from '@angular/fire/firestore'
+
 
 @Component({
   selector: 'app-login',
@@ -8,9 +10,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+
   collectioninstance:any;
-  constructor(private route:Router,private form:FormBuilder){
- 
+  constructor(private route:Router,private form:FormBuilder,private firestore:Firestore){
+
   }
 
   homepage(){
@@ -25,8 +28,7 @@ export class LoginComponent {
   })
 
   userLoginDetails(){
-    sessionStorage.setItem('isLoggedin','true');
-    this.route.navigateByUrl("admissionform");
+
   }
 
 }

@@ -9,6 +9,13 @@
           "stack-queue-2023"
         ]
       }
+    },
+    "stack-queue-official": {
+      "hosting": {
+        "STACK-QUEUE": [
+          "stack-queue-official"
+        ]
+      }
     }
   }
 }
