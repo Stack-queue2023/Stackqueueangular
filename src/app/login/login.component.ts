@@ -1,19 +1,16 @@
 import { Component } from '@angular/core';
 import { FormBuilder,Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { Firestore,collection, collectionData } from "@angular/fire/firestore";
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-
-  constructor(private route:Router,private form:FormBuilder, private firestore: Firestore){
-    const collectioninstance=collection(this.firestore, 'posts');
-    collectionData(collectioninstance).subscribe((x)=>{
-      console.log(x);
-    })
+  collectioninstance:any;
+  constructor(private route:Router,private form:FormBuilder){
+ 
   }
 
   homepage(){
