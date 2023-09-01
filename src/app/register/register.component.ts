@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import {FormBuilder,Validators} from '@angular/forms';
-import {Firestore,addDoc,collection,collectionData} from '@angular/fire/firestore'
+import {Firestore, addDoc, collection, collectionData} from '@angular/fire/firestore'
 
 @Component({
   selector: 'app-register',
@@ -11,10 +11,8 @@ import {Firestore,addDoc,collection,collectionData} from '@angular/fire/firestor
 export class RegisterComponent {
 
   constructor(private route:Router,private form:FormBuilder,private firestore:Firestore){
-    const collectiondata=collection(this.firestore,'userregistration');
-    collectionData(collectiondata).subscribe((x)=>{
-      console.log(x);
-    })
+    // database.list('/courses')
+
   }
   homepage(){
     this.route.navigateByUrl('').then(()=>{
@@ -30,20 +28,31 @@ export class RegisterComponent {
     confirmpassword:['',Validators.required]
   })
 
-  registerFormSubmit(){
-    if(this.registerform.controls['password'].value == this.registerform.controls['confirmpassword'].value){
-      alert("form submitted");
-      console.log(this.registerform.value);
-      const collectiondata=collection(this.firestore,'userregistration');
-      addDoc(collectiondata,this.registerform.value).then((res)=>{
-        console.log(res);
-      }).catch((error)=>{
-        console.log(error);
+  registerFormSubmit(registerDetails:any){
+    if(registerDetails.password == registerDetails.confirmpassword){
+    const instance=collection(this.firestore,'userregistration');
+    collectionData(instance).subscribe((x)=>{
+      console.log(x);
+      const user=x.find((userdata:any)=>{
+        console.log(userdata.email);
+        return userdata.email==registerDetails.email;
       });
-      this.registerform.reset();
-    }
-    else{
-      alert("Confirm Password does not match");
-    }
+      if(user){
+        alert("Already registered");
+      }
+      else{
+        const instance=collection(this.firestore,'userregistration');
+        addDoc(instance, registerDetails).then((res)=>{
+      console.log(res);
+    }).catch((err)=>{
+      console.log(err);
+    })
+      }
+    })
+
+  }
+  else{
+    alert("Confirm password does not match");
+  }
   }
 }
