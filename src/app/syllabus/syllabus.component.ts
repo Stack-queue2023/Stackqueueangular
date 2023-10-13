@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, Input } from '@angular/core';
+import { collectionData, Firestore } from '@angular/fire/firestore';
 import { Router } from '@angular/router';
+import { collection } from 'firebase/firestore';
 
 @Component({
   selector: 'app-syllabus',
@@ -37,7 +39,7 @@ export class SyllabusComponent {
   parsecourseRating:any;
   starvisible:boolean=false;
 
-  constructor(private _http:HttpClient,private route:Router){
+  constructor(private _http:HttpClient,private route:Router,private firestore:Firestore){
     this.courseLengthCount=1;
     this.courseRating=sessionStorage.getItem('courserating');
     this.splitcourseRating=this.courseRating.split('.');
@@ -70,9 +72,10 @@ export class SyllabusComponent {
 
 
   courseDetails(coursename:any){
-    this._http.get<any>("http://localhost:3000/courses").subscribe((courseDetails)=>{
+    const instance=collection(this.firestore,'courses');
+    collectionData(instance).subscribe(courseselection=>{
       this.checkCount=0;
-      const course=courseDetails.find((course:any)=>{
+      const course=courseselection.find((course:any)=>{
         this.storeCourseLength=this.courseLengthCount++;
         this.courseFind=course;
         this.courseRating=course.rating;
@@ -80,7 +83,7 @@ export class SyllabusComponent {
         this.parsecourseRating=parseInt(course.rating);
         this.coursenameSelected=course.coursename;
         this.parsedsyllabus=course.syllabus;
-        this.courseSelection=courseDetails;
+        this.courseSelection=courseselection;
         this.slideimage=course.slideimage;
         this.nextslideimage=course.nextslideimage;
         return coursename===course.coursename;
@@ -122,11 +125,25 @@ export class SyllabusComponent {
     })
   }
 
-<<<<<<< HEAD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   mobilecourseDetails(coursename:any){
-    this._http.get<any>("http://localhost:3000/courses").subscribe((courseDetails)=>{
+    const instance=collection(this.firestore,'courses');
+    collectionData(instance).subscribe(courseselection=>{
       this.checkCount=0;
-      const course=courseDetails.find((course:any)=>{
+      const course=courseselection.find((course:any)=>{
         this.storeCourseLength=this.courseLengthCount++;
         this.courseFind=course;
         this.coursenameSelected=course.coursename;
@@ -142,7 +159,7 @@ export class SyllabusComponent {
           this.mobileslideimages=course.mobileimage;
           this.ispython=false;
         }
-        this.courseSelection=courseDetails;
+        this.courseSelection=courseselection;
         return coursename===course.coursename;
       });
       if(course){
@@ -195,9 +212,8 @@ export class SyllabusComponent {
       this.mobileslideimagearray[index]=this.mobileslideimagearray[1];
       this.mobileslideimagearray[1]=temp;
     }
-=======
-  enrollNow(){
-    this.route.navigateByUrl('admissionform');
->>>>>>> c121874c44901ee0cc6e03b38e18e7ed3338b237
-  }
+}
+enrollNow(){
+  this.route.navigateByUrl('admissionform');
+}
 }

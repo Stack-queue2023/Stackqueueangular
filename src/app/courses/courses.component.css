@@ -144,3 +144,19 @@
     display: none;
   }
 }
+
+@media screen and (max-width:1024px) and (min-width:767px) {
+  .main-course-details{
+    width: 1165px;
+  }
+  .course-details{
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .course-details img{
+    width: 550px;
+    height: 460px;
+  }
+  .course-details-para p{
+    width: 28rem;
+  }
+}

@@ -181,3 +181,22 @@ small{
     cursor: pointer;
   }
 }
+@media screen and (max-width:1024px) and (min-width:767px) {
+  .form-comment{
+    padding:3rem 6rem 0 6rem ;
+  }
+  .address-details{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+    width: 1000px;
+  }
+  .contact-textarea-control{
+    width: 1000px;
+  }
+  .comment-button{
+    display: flex;
+    margin-left: 70%;
+    width: 200px;
+  }
+}

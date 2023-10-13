@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { collectionData, Firestore } from '@angular/fire/firestore';
 import { Router } from '@angular/router';
+import { collection } from 'firebase/firestore';
 
 @Component({
   selector: 'app-courses',
@@ -24,9 +26,13 @@ export class CoursesComponent {
   mobileslideimages:any=[];
   courseReview:any;
 
-  constructor(private _http:HttpClient,private route:Router){
-    this._http.get<any>("http://localhost:3000/courses").subscribe((coursedetails)=>{
-    this.coursedetails=coursedetails;
+  constructor(private _http:HttpClient,private route:Router,private firestore:Firestore){
+    // this._http.get<any>("http://localhost:3000/courses").subscribe((coursedetails)=>{
+    // this.coursedetails=coursedetails;
+    // })
+    const instance=collection(this.firestore,'courses');
+    collectionData(instance).subscribe(x=>{
+      this.coursedetails=x;
     })
   }
 
@@ -37,7 +43,8 @@ export class CoursesComponent {
 
   courseDetails(coursename:any,index:any){
     console.log(index);
-    this._http.get("http://localhost:3000/courses").subscribe((courseselection:any)=>{
+    const instance=collection(this.firestore,'courses');
+    collectionData(instance).subscribe(courseselection=>{
       this.courseSelection=courseselection;
       const course=courseselection.find((coursefind:any)=>{
         this.courseFind=coursefind;
@@ -79,8 +86,10 @@ export class CoursesComponent {
     })
   }
   mobilecourseDetails(coursename:any,index:any){
-    console.log(index);
-    this._http.get("http://localhost:3000/courses").subscribe((courseselection:any)=>{
+
+    const instance=collection(this.firestore,'courses');
+    collectionData(instance).subscribe(courseselection=>{
+      console.log(courseselection);
       this.courseSelection=courseselection;
       const course=courseselection.find((coursefind:any)=>{
         this.courseFind=coursefind;
@@ -113,6 +122,7 @@ export class CoursesComponent {
         sessionStorage.setItem('mobileslideimage',JSON.stringify(this.mobileslideimages));
         if(this.courseName=="Python"){
           sessionStorage.setItem('mobilecourseimage',JSON.stringify(this.courseFind.mobileimage));
+          console.log(this.courseFind.mobileimage);
         }
         else{
           sessionStorage.setItem('mobilecourseimage',this.courseFind.mobileimage);

@@ -107,7 +107,7 @@
     <p>Please enter your details</p>
   </div>
   <div class="formboxes">
-    <form [formGroup]="registerform" (ngSubmit)="registerFormSubmit()">
+    <form [formGroup]="registerform" (ngSubmit)="registerform.valid &&registerFormSubmit(registerform.value)">
       <div class="formgroup">
         <div class="formcontrols">
           <input type="text" placeholder="Enter your name" formControlName="username">
@@ -171,11 +171,7 @@
             <p class="para">Please enter your details</p>
           </div>
           </div>
-<<<<<<< HEAD
-          <form  [formGroup]="registerform" (ngSubmit)="registerFormSubmit()">
-=======
           <form [formGroup]="registerform" (ngSubmit)="registerform.valid && registerFormSubmit(registerform.value)">
->>>>>>> c121874c44901ee0cc6e03b38e18e7ed3338b237
             <div class="form-input-control">
               <label for=""><b>Name</b></label>
               <input type="text" placeholder="Username" formControlName="username">
