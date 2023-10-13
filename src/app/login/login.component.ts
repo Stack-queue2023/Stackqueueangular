@@ -12,6 +12,7 @@ import {Firestore, collection, collectionData} from '@angular/fire/firestore'
 export class LoginComponent {
 
   collectioninstance:any;
+  studentDetails:any;
   constructor(private route:Router,private form:FormBuilder,private firestore:Firestore){
 
   }
@@ -27,8 +28,27 @@ export class LoginComponent {
     Password:['',[Validators.required,Validators.pattern("(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&].{8,}")]]
   })
 
-  userLoginDetails(){
+  userLoginDetails(formdetails:any){
+    const instance=collection(this.firestore,'userregistration');
+    collectionData(instance).subscribe((x)=>{
+      const user=x.find((userdata: any) => {
+        this.studentDetails={
+          emailid : userdata.email ,
+          username: userdata.username
+        };
+        return userdata.email == formdetails.Email && userdata.password == formdetails.Password;
+      });
+      if(user){
+        sessionStorage.setItem("islogged","true");
+        sessionStorage.setItem("studentDetails",JSON.stringify(this.studentDetails));
+        this.route.navigateByUrl("courses").then(()=>{
+          window.location.reload();
+        });
+      }
+      else{
+        alert("invalid details");
+      }
+  });
 
-  }
-
+}
 }

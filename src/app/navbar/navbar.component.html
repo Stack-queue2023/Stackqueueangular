@@ -11,7 +11,8 @@
     <a routerLink="syllabus" routerLinkActive="navigation-active">SYLLABUS</a>
   </nav>
   <div class="register-button">
-    <a routerLink="login"><button>LOGIN</button></a>
+    <a routerLink="login" *ngIf="isLogged"><button>LOGIN</button></a>
+    <a href="" *ngIf="!isLogged"><button (click)="Logout()">Logout</button></a>
   </div>
 </div>
 </header>

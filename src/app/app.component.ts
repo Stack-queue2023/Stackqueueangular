@@ -27,6 +27,10 @@ export class AppComponent implements OnInit {
           this.navbartoggle=false;
           this.footertoggle=false;
         }
+        else{
+          this.navbartoggle=true;
+          this.footertoggle=true;
+        }
       }
     })
   }

@@ -86,7 +86,7 @@
         </div>
         <div class="formcontrols">
           <a href="">Forgot password ?</a>
-          <button>LOGIN</button>
+          <button (click)="userLoginDetails(loginvalidation.value)" [disabled]="!loginvalidation.valid">LOGIN</button>
           <h3>don't have an account? <a routerLink="/register">Register</a></h3>
         </div>
       </div>
@@ -176,7 +176,7 @@
             <p class="para">Please enter your details</p>
           </div>
           </div>
-          <form [formGroup]="loginvalidation" (ngSubmit)="loginvalidation.valid && userLoginDetails()">
+          <form [formGroup]="loginvalidation">
             <div class="form-input-control">
               <label for=""><b>Email</b></label>
               <input type="email" placeholder="Email ID" formControlName="Email">
@@ -193,7 +193,7 @@
               <a><b>Forgot Password ?</b></a>
             </div>
             <div class="form-input-control">
-              <button>LOGIN</button>
+              <button  (click)="userLoginDetails(loginvalidation.value)" [disabled]="!loginvalidation.valid">LOGIN</button>
             </div>
             <div class="register-navigate">
               <h3>don't have an account ? <a routerLink="/register">Register</a></h3>

@@ -32,11 +32,9 @@ export class RegisterComponent {
     if(registerDetails.password == registerDetails.confirmpassword){
     const instance=collection(this.firestore,'userregistration');
     collectionData(instance).subscribe((x)=>{
-      console.log(x);
       const user=x.find((userdata: any) => {
         return userdata.email == registerDetails.email;
       });
-      // console.log(user);
       if(user){
         alert("Already registered");
       }
